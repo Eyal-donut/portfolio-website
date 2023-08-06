@@ -20,10 +20,12 @@
   --font-size-p: 2rem;
   --font-size-p2-projects: 1.5rem;
   --font-size-button: 1.8rem;
+  --font-size-nav-button: 2.1rem;
 
   --font-weight-bold-h1-h3: 700;
   --font-weight-p: 100;
   --font-weight-bold-p2-projects: 600;
+  --font-weight-nav-button: 550;
 
   --line-height-h1: 7.5rem;
   --line-height-h2: 3.3rem;
