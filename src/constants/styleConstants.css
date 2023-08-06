@@ -1,23 +1,37 @@
 :root {
-    --bgr-main:#FCFCFC;
-    --bgr-sec: #D8DADE;
-    --bgr-third: #e5e7eb;
+  --bgr-main: rgb(255, 255, 255);
+  --bgr-transparent: rgba(255, 255, 255, 0.5);
+  --bgr-sec: rgb(0, 0, 0);
+  --bgr-sec-transparent: rgb(0, 0, 0, 0.8);
 
-    --main-theme-color: #5ECC71;
-    --main-theme-color-transparent: rgb(94, 204, 113, .6);
-    --main-theme-bgr:rgb(94, 204, 113, .3);
+  --main-theme-color: #000000;
 
-    --main-text-color: #615f5f;
-    --sec-text-color: #FFFFFF;
-    --third-text-color: #7c7979;
+  --navbar-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --btn-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
-    --navbar-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    --btn-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    
-    --prim-margin: 2rem;
-    --sec-margin: 1rem;
-    --third-margin: .5rem;
-   
-    --font-weight-text: 450;
-    --font-weight-bolder: 550;
+  --prim-margin: 2rem;
+  --sec-margin: 1rem;
+  --third-margin: 0.5rem;
+
+  --font-size-h1: 11.5rem;
+  --font-size-h2: 2.1rem;
+  --font-size-h3: 1.6rem;
+  --font-size-p: 2rem;
+  --font-size-p2-projects: 1.5rem;
+  --font-size-button: 1.8rem;
+
+  --font-weight-bold-h1-h3: 700;
+  --font-weight-p: 100;
+  --font-weight-bold-p2-projects: 600;
+
+  --line-height-h1: 7.5rem;
+  --line-height-h2: 3.3rem;
+  --line-height-h3: 2.4rem;
+  --line-height-p: 2.9rem;
+  --line-height-button: 2.9rem;
+  --line-height-p2-projects: 2.5rem;
+
+  --margin-h1: 10rem 0 1.8rem;
+  --margin-h3: 2rem;
 }
