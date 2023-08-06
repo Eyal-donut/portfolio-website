@@ -1,0 +1,23 @@
+:root {
+    --bgr-main:#FCFCFC;
+    --bgr-sec: #D8DADE;
+    --bgr-third: #e5e7eb;
+
+    --main-theme-color: #5ECC71;
+    --main-theme-color-transparent: rgb(94, 204, 113, .6);
+    --main-theme-bgr:rgb(94, 204, 113, .3);
+
+    --main-text-color: #615f5f;
+    --sec-text-color: #FFFFFF;
+    --third-text-color: #7c7979;
+
+    --navbar-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --btn-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+    --prim-margin: 2rem;
+    --sec-margin: 1rem;
+    --third-margin: .5rem;
+   
+    --font-weight-text: 450;
+    --font-weight-bolder: 550;
+}
