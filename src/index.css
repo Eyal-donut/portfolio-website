@@ -1,12 +1,11 @@
 @font-face {
-  font-family: "proxima";
-  src: url(/src/assets/Proxima\ Nova\ Font.otf);
+  font-family: "JosefinSans";
+  src: url(/portfolio-website/src/assets/JosefinSans-Regular.ttf);
 }
 
 :root {
-  font-family: "proxima";
-  line-height: 1.5;
-  font-weight: var(--font-weight-text);
+  font-family: "JosefinSans";
+  font-weight: var(--font-weight-normal);
   font-size: 62.5%;
   color: var(--main-text-color);
   text-align: center;
@@ -28,23 +27,49 @@ html * {
   align-items: center;
   position: relative;
   font-size: 1.4rem;
-  padding-bottom: 7rem;
 }
 
 a {
-  font-weight: 500;
   text-decoration: inherit;
   color: inherit;
 }
 
 h1 {
-  margin-top: var(--prim-margin-top);
-  line-height: 1.3;
-  font-size: 2.8rem;
+  margin: var(--margin-h1);
+  line-height: var(--line-height-h1);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold-h1-h3);
+}
+h2 {
+  line-height: var(--line-height-h2);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold-h1-h3);
+}
+
+h3 {
+  line-height: var(--line-height-h3);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold-h1-h3);
+  margin: var(--margin-h3);
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
 }
 
 p {
-  margin-top: var(--prim-margin-top);
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-p);
+  line-height: var(--line-height-p);
+}
+
+.p-2-projects {
+  font-size: var(--font-size-p2-projects);
+  font-weight: var(--font-weight-bold-p2-projects);
+  line-height: var(--line-height-p2-projects);
 }
 
 ul {
