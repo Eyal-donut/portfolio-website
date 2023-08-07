@@ -4,13 +4,15 @@ import { RootState } from "../redux/store";
 const getHTMLBySectionName = (
   section: "Home" | "About" | "Projects" | "Contact"
 ) => {
-  const homeRef = useSelector((state: RootState) => state.sectionRefs.home);
-  const aboutRef = useSelector((state: RootState) => state.sectionRefs.about);
+  const homeRef = useSelector((state: RootState) => state.sectionRefs.homeRef);
+  const aboutRef = useSelector(
+    (state: RootState) => state.sectionRefs.aboutRef
+  );
   const projectsRef = useSelector(
-    (state: RootState) => state.sectionRefs.projects
+    (state: RootState) => state.sectionRefs.projectsRef
   );
   const contactRef = useSelector(
-    (state: RootState) => state.sectionRefs.contact
+    (state: RootState) => state.sectionRefs.contactRef
   );
   switch (section) {
     case "Home":

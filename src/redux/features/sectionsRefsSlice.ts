@@ -1,29 +1,39 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { RefObject, useRef } from "react";
-
-const homeRef = useRef(null);
-const aboutRef = useRef(null);
-const projectsRef = useRef(null);
-const contactRef = useRef(null);
+import { createSlice, PayloadAction, Draft } from "@reduxjs/toolkit";
+import { RefObject } from "react";
 
 interface sectionRefs {
-  home: RefObject<HTMLDivElement> | null;
-  about: RefObject<HTMLDivElement> | null;
-  projects: RefObject<HTMLDivElement> | null;
-  contact: RefObject<HTMLDivElement> | null;
+  homeRef: RefObject<HTMLDivElement> | null;
+  aboutRef: RefObject<HTMLDivElement> | null;
+  projectsRef: RefObject<HTMLDivElement> | null;
+  contactRef: RefObject<HTMLDivElement> | null;
 }
 
 const initialState: sectionRefs = {
-  home: homeRef,
-  about: aboutRef,
-  projects: projectsRef,
-  contact: contactRef,
+  homeRef: null,
+  aboutRef: null,
+  projectsRef: null,
+  contactRef: null,
 };
 
 const sectionRefsSlice = createSlice({
   name: "sectionRefs",
   initialState,
-  reducers: {},
+  reducers: {
+    setRef: (
+      state,
+      action: PayloadAction<{
+        refType: keyof sectionRefs;
+        ref: Draft<RefObject<HTMLDivElement>>;
+      }>
+    ) => {
+      const { refType, ref } = action.payload;
+      if (ref.current instanceof HTMLDivElement) {
+        state[refType] = ref;
+      } else {
+        throw new Error(`Invalid ref type for ${refType}`);
+      }
+    },
+  },
 });
 
 export default sectionRefsSlice.reducer;
