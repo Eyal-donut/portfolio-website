@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.8);
+}

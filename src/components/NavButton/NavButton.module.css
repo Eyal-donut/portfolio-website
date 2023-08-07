@@ -1,0 +1,28 @@
+.button {
+  position: relative;
+  list-style: none;
+  font-weight: var(--font-weight-nav-button);
+  font-size: var(--font-size-button);
+  margin: var(--margin-nav-button);
+  padding: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: -0.3rem;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.1rem solid black;
+  transition: all 0.4s ease-in-out;
+}
+
+.button:hover::before {
+  transform: translateX(100%);
+}

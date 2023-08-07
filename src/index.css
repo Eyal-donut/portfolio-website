@@ -1,10 +1,9 @@
 @font-face {
   font-family: "JosefinSans";
-  src: url(/portfolio-website/src/assets/JosefinSans-Regular.ttf);
+  src: url(/src/assets/JosefinSans-Regular.ttf);
 }
 
 :root {
-  font-family: "JosefinSans";
   font-size: 62.5%;
   color: var(--main-text-color);
   text-align: center;
@@ -12,6 +11,7 @@
 
 body,
 html * {
+  font-family: "JosefinSans";
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -25,7 +25,6 @@ html * {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  font-size: 1.4rem;
 }
 
 a {
@@ -74,4 +73,9 @@ p {
 
 ul {
   list-style: none;
+}
+.centered-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
