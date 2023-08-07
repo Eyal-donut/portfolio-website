@@ -1,6 +1,6 @@
 import { FC } from "react";
-import scrollToHTML from "../../utils/scrollToHTML";
-import getHTMLBySectionName from "../../utils/getHTMLBySectionName";
+import scrollToHTML from "../../../utils/scrollToHTML";
+import getHTMLBySectionName from "../../../utils/scrollToHTML";
 import classes from "./NavButton.module.css";
 
 interface NavButtonProps {
