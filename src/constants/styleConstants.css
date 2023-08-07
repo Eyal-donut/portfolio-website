@@ -1,6 +1,6 @@
 :root {
   --bgr-main: rgb(255, 255, 255);
-  --bgr-transparent: rgba(255, 255, 255, 0.5);
+  --bgr-transparent: rgba(255, 255, 255, 0.8);
   --bgr-sec: rgb(0, 0, 0);
   --bgr-sec-transparent: rgb(0, 0, 0, 0.8);
 
@@ -36,7 +36,7 @@
 
   --margin-h1: 10rem 0 1.8rem;
   --margin-h3: 2rem;
-  --margin-nav-button: 1.5rem 0.5rem;
+  --margin-nav-button: 1.5rem 2rem;
 
   --navbar-height: 6rem;
 }
