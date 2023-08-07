@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import targetSectionReducer from "./features/targetRefSlice";
+import sectionsRefsReducer from "./features/sectionsRefsSlice";
 
 export const store = configureStore({
   reducer: {
-    targetSection: targetSectionReducer,
+    sectionRefs: sectionsRefsReducer,
   },
 });
 

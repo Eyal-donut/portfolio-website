@@ -1,15 +1,18 @@
-import { FC, MouseEvent } from "react";
-import scrollToSection from "../../utils/ScrollToSection";
+import { FC } from "react";
+import scrollToHTML from "../../utils/ScrollToHTML";
+import getHTMLBySectionName from "../../utils/getHTMLBySectionName";
 
-interface NavbuttonProps {
+interface NavButtonProps {
   sectionName: "Home" | "About" | "Projects" | "Contact";
 }
 
-const NavButton: FC<NavbuttonProps> = ({ sectionName }) => {
-
-    const clickHandler: MouseEvent<HTMLButtonElement> = (sectionName) => {
-        // scrollToSection()
-    }
+const NavButton: FC<NavButtonProps> = ({ sectionName }) => {
+  
+  const clickHandler = () => {
+    const targetHTML = getHTMLBySectionName(sectionName);
+    if (!targetHTML) throw new Error("Error in get HTMLBySectionName");
+    scrollToHTML(targetHTML);
+  };
 
   return <button onClick={clickHandler}>{sectionName}</button>;
 };
