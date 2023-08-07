@@ -1,6 +1,6 @@
 import { FC } from "react";
 import scrollToHTML from "../../../utils/scrollToHTML";
-import getHTMLBySectionName from "../../../utils/scrollToHTML";
+import getHTMLBySectionName from "../../../utils/getHTMLBySectionName";
 import classes from "./NavButton.module.css";
 
 interface NavButtonProps {
@@ -9,9 +9,9 @@ interface NavButtonProps {
 
 const NavButton: FC<NavButtonProps> = ({ name }) => {
   const clickHandler = () => {
-    // const targetHTML = getHTMLBySectionName(name);
-    // if (!targetHTML) throw new Error("Error in getHTMLBySectionName");
-    // scrollToHTML(targetHTML);
+    const targetHTML = getHTMLBySectionName(name);
+    if (!targetHTML) throw new Error("Error in getHTMLBySectionName");
+    scrollToHTML(targetHTML);
   };
 
   return (

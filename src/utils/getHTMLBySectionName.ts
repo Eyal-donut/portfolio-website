@@ -1,28 +1,18 @@
-import { useSelector } from "react-redux";
-import { RootState } from "../redux/store";
+import getElementById from "./getElementById";
+import { sectionIds } from "../constants/constants";
 
 const getHTMLBySectionName = (
   section: "Home" | "About" | "Projects" | "Contact"
 ) => {
-  const homeRef = useSelector((state: RootState) => state.sectionRefs.homeRef);
-  const aboutRef = useSelector(
-    (state: RootState) => state.sectionRefs.aboutRef
-  );
-  const projectsRef = useSelector(
-    (state: RootState) => state.sectionRefs.projectsRef
-  );
-  const contactRef = useSelector(
-    (state: RootState) => state.sectionRefs.contactRef
-  );
   switch (section) {
     case "Home":
-      return homeRef?.current;
+      return getElementById(sectionIds.MAIN);
     case "About":
-      return aboutRef?.current;
+      return getElementById(sectionIds.ABOUT);
     case "Projects":
-      return projectsRef?.current;
+      return getElementById(sectionIds.PROJECTS);
     default:
-      return contactRef?.current;
+      return getElementById(sectionIds.CONTACT);
   }
 };
 

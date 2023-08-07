@@ -1,39 +1,32 @@
-import { createSlice, PayloadAction, Draft } from "@reduxjs/toolkit";
-import { RefObject } from "react";
+// // sectionsRefsSlice.ts
+// import { createSlice, Draft, PayloadAction } from "@reduxjs/toolkit";
+// import { RefObject } from "react";
 
-interface sectionRefs {
-  homeRef: RefObject<HTMLDivElement> | null;
-  aboutRef: RefObject<HTMLDivElement> | null;
-  projectsRef: RefObject<HTMLDivElement> | null;
-  contactRef: RefObject<HTMLDivElement> | null;
-}
+// interface SectionRefsState {
+//   sections: Record<string, RefObject<HTMLDivElement> | null>;
+// }
 
-const initialState: sectionRefs = {
-  homeRef: null,
-  aboutRef: null,
-  projectsRef: null,
-  contactRef: null,
-};
+// const initialState: SectionRefsState = {
+//   sections: {},
+// };
 
-const sectionRefsSlice = createSlice({
-  name: "sectionRefs",
-  initialState,
-  reducers: {
-    setRef: (
-      state,
-      action: PayloadAction<{
-        refType: keyof sectionRefs;
-        ref: Draft<RefObject<HTMLDivElement>>;
-      }>
-    ) => {
-      const { refType, ref } = action.payload;
-      if (ref.current instanceof HTMLDivElement) {
-        state[refType] = ref;
-      } else {
-        throw new Error(`Invalid ref type for ${refType}`);
-      }
-    },
-  },
-});
+// const sectionRefsSlice = createSlice({
+//   name: "sectionRefs",
+//   initialState,
+//   reducers: {
+//     setRef: (
+//       state,
+//       action: PayloadAction<{
+//         section: string;
+//         ref: Draft<RefObject<HTMLDivElement>>;
+//       }>
+//     ) => {
+//       const { section, ref } = action.payload;
+//       state.sections[section] = ref;
+//     },
+//   },
+// });
 
-export default sectionRefsSlice.reducer;
+// export const { setRef } = sectionRefsSlice.actions;
+
+// export default sectionRefsSlice.reducer;

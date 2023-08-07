@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 6rem;
+  height: var(--navbar-height);
   width: 100%;
-  position: sticky;
+  position: fixed;
+  background: var(--bgr-transparent);
   left: 0;
+  top: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.8);
 }
