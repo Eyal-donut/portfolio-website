@@ -1,9 +1,12 @@
-import getElementById from "./getElementById";
 import { sectionIds } from "../constants/constants";
 
 const getHTMLBySectionName = (
   section: "Home" | "About" | "Projects" | "Contact"
 ) => {
+  const getElementById = (id: string) => {
+    return document.getElementById(id);
+  };
+
   switch (section) {
     case "Home":
       return getElementById(sectionIds.MAIN);
