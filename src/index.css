@@ -82,6 +82,38 @@ ul {
 
 main,
 section {
-  height: 100vh;
   padding-top: var(--navbar-height);
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: 660px) {
+  :root {
+    font-size: 68%;
+  }
+  .hero {
+    background: url(/Assets/images/hero_04_tablet.png) no-repeat center
+      center/cover;
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    font-size: 72%;
+  }
+  .hero {
+    background: url(/Assets/images/hero_04_desktop.png) no-repeat center
+      center/cover;
+  }
+  .navbar {
+    display: flex;
+  }
+  .menu-wrap {
+    display: none;
+  }
 }
