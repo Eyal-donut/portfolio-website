@@ -8,8 +8,8 @@ const HomePage: FC = () => {
   return (
     <>
       <Main />
-      <About />
       <Projects />
+      <About />
       <Contact />
     </>
   );

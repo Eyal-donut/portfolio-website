@@ -1,0 +1,13 @@
+.projectWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  max-width: 750px;
+  height: 40vh;
+  transition: all var(--main-speed) ease-in-out;
+  border-top: 0.1rem solid black;
+  border-bottom: 0.1rem solid black;
+}
