@@ -12,7 +12,7 @@ const TypedMessage: FC<TypedMessageProps> = ({ message }) => {
   return (
     <h2 className={classes.typedMessage}>
       {typedMessage}
-      <span className={classes.spanCursor}
+      <span
         style={{
           color: showCursor ? "black" : "transparent",
         }}

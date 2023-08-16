@@ -11,10 +11,10 @@ const ProjectHeaderAndText: FC<ProjectHeaderAndTextProps> = ({
   description,
 }) => {
   return (
-    <>
-      <h2>{header}</h2>
-      <p className={classes.projectDescription}>{description}</p>
-    </>
+    <div className={classes.wrapper}>
+      <h2 className={classes.header}>{header}</h2>
+      <p className={classes.descriptionText}>{description}</p>
+    </div>
   );
 };
 

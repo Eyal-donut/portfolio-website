@@ -9,9 +9,9 @@ export const sectionIds = {
 export const projectsInfos = [
   {
     imageURL:'add url',
-    description: 'description one',
+    description: 'An innovative full-stack app, designed to help you make informed purchasing decisions based on your nutritional, dietary and environmental preferences, by simply scanning a barcode.',
     projectNumber: 1,
-    header: 'Header one'
+    header: 'NutriScan'
 
 
   }

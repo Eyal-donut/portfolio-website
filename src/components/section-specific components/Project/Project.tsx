@@ -17,15 +17,16 @@ const Project: FC<ProjectProps> = ({
   projectNumber,
 }) => {
   return (
-    <div
-      className={classes.projectWrapper}
-      style={{
-        background: `url(${imageURL}) no-repeat center
-      center/cover`,
-      }}
-    >
-      <ProjectHeaderAndText header={header} description={description} />
+    <div className={classes.projectWrapper}>
+      <div
+        className={classes.projectBackground}
+        style={{
+          background: `url(/src/assets/images/background1.jfif) no-repeat center
+  center/cover`,
+        }}
+      />
       <ProjectNumber projectNumber={projectNumber} />
+      <ProjectHeaderAndText header={header} description={description} />
     </div>
   );
 };
