@@ -14,7 +14,7 @@ export const useTypedMessage = (message: string) => {
         let visibleMessage = "";
         setShowCursor(true);
         for (let i = 0; i < message.length; i++) {
-          await waitFunction(100);
+          await waitFunction(150);
           visibleMessage = `${visibleMessage}${message[i]}`;
           setTypedMessage(visibleMessage);
         }

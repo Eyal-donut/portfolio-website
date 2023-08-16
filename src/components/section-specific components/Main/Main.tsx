@@ -5,7 +5,7 @@ import classes from './Main.module.css'
 
 const Main: FC = () => {
   return <main id={sectionIds.MAIN} className={classes.main}>
-    <Header/>
+    <Header message="I AM EYAL LILA. A FULLSTACK DEVELOPER"/>
   </main>;
 };
 export default Main;
