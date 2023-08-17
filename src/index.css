@@ -17,6 +17,11 @@ html * {
   margin: 0;
 }
 
+body, html{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 #root {
   min-width: 320px;
   min-height: 100vh;

@@ -1,0 +1,20 @@
+.numberBoxContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 1.5rem;
+    padding-top: .5rem;
+}
+
+.numberBox{
+   font-size: var(--font-size-p2-projects);
+}
+
+.line{
+    height: .08rem;
+    background-color: black;
+    margin-right: 0.2rem;
+    margin-top: .55rem;
+    transition: all 0.5s ease-in-out;
+}
+

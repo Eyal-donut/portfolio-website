@@ -14,7 +14,7 @@
   --sec-margin: 1rem;
   --third-margin: 0.5rem;
 
-  --font-size-h1: 11.5rem;
+  --font-size-h1: 9rem;
   --font-size-h2: 2.1rem;
   --font-size-h3: 1.6rem;
   --font-size-p: 2rem;
@@ -24,7 +24,7 @@
 
   --font-weight-bold-h1-h3: 700;
   --font-weight-p: 100;
-  --font-weight-bold-p2-projects: 600;
+  --font-weight-bold-p2-projects: 500;
   --font-weight-nav-button: 550;
 
   --line-height-h1: 7.5rem;
@@ -32,10 +32,10 @@
   --line-height-h3: 2.4rem;
   --line-height-p: 2.9rem;
   --line-height-button: 2.9rem;
-  --line-height-p2-projects: 2.5rem;
+  --line-height-p2-projects: 2.2rem;
 
   --margin-h1: 10rem 0 1.8rem;
-  --margin-h3: 2rem 0 5rem;
+  --margin-h3: 8rem 0;
   --margin-nav-button: 1.5rem 2rem;
 
   --navbar-height: 6rem;

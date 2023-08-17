@@ -3,10 +3,11 @@
   justify-content: center;
   align-items: center;
   height: var(--navbar-height);
-  width: 100%;
+  width: 100vw;
   position: fixed;
   background: var(--bgr-transparent);
   left: 0;
   top: 0;
   z-index: 10;
+  box-shadow: var(--navbar-box-shadow);
 }

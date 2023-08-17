@@ -1,3 +1,19 @@
-.ProjectHeaderAndText{
-    
+.descriptionText {
+  font-size: var(--font-size-p2-projects);
+  font-weight: var(--font-weight-bold-p2-projects);
+  line-height: var(--line-height-p2-projects);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  text-transform: none;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+@media (max-width: 660px) {
+  .wrapper {
+  }
 }
