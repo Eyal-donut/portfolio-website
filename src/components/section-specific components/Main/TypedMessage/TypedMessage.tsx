@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { useTypedMessage } from "../../../hooks/useTypedMessage/useTypedMessage";
+import { useTypedMessage } from "../../../../hooks/useTypedMessage/useTypedMessage";
 import classes from "./TypedMessage.module.css";
 
 interface TypedMessageProps {

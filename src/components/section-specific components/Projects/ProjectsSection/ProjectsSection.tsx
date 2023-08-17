@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { sectionIds } from "../../../../constants/constants";
 import Project from "../Project/Project";
-import classes from "./Projects.module.css";
+import classes from "./ProjectsSection.module.css";
 
 interface ProjectType {
   imageURL: string;
