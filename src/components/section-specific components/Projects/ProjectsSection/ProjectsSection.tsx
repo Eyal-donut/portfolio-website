@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { sectionIds } from "../../../constants/constants";
+import { sectionIds } from "../../../../constants/constants";
 import Project from "../Project/Project";
 import classes from "./Projects.module.css";
 
@@ -14,7 +14,7 @@ interface ProjectsProps {
   projects: ProjectType[];
 }
 
-const Projects: FC<ProjectsProps> = ({ projects }) => {
+const ProjectsSection: FC<ProjectsProps> = ({ projects }) => {
   return (
     <section id={sectionIds.PROJECTS} className={classes.wrapper}>
       <h3>selected projects</h3>
@@ -34,4 +34,4 @@ const Projects: FC<ProjectsProps> = ({ projects }) => {
     </section>
   );
 };
-export default Projects;
+export default ProjectsSection;
