@@ -1,10 +1,16 @@
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.header{
-    margin-bottom: 8rem;
+.header {
+  margin-bottom: 8rem;
+}
+
+.innerWrapper {
+  border-bottom: 0.1rem solid black;
+  width: 100%;
+  max-width: 750px;
 }

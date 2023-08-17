@@ -10,14 +10,11 @@
    font-size: var(--font-size-p2-projects);
 }
 
-.growLine{
-    width: 1.5rem;
+.line{
     height: .08rem;
     background-color: black;
     margin-right: 0.2rem;
     margin-top: .55rem;
+    transition: all 0.5s ease-in-out;
 }
 
-.growLine:hover{
-    width: 5rem;
-}

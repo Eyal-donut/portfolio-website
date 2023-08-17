@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC, useState } from "react";
 import classes from "./Project.module.css";
 import ProjectHeaderAndText from "../ProjectHeaderAndText/ProjectHeaderAndText";
 import ProjectNumber from "../ProjectNumber/ProjectNumber";
@@ -16,16 +16,35 @@ const Project: FC<ProjectProps> = ({
   description,
   projectNumber,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div className={classes.projectWrapper}>
+    <div
+      className={
+        isHovered
+          ? `${classes.projectWrapperHovered} ${classes.projectWrapper}`
+          : classes.projectWrapper
+      }
+      style={{
+        background: `url(${imageURL}) no-repeat center center/cover`,
+      }}
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+    >
       <div
-        className={classes.projectBackground}
+        className={classes.backgroundOverlay}
         style={{
-          background: `url(/src/assets/images/background1.jfif) no-repeat center
-  center/cover`,
+          opacity: isHovered ? 0.7 : 1,
         }}
-      />
-      <ProjectNumber projectNumber={projectNumber} />
+      ></div>
+      <ProjectNumber projectNumber={projectNumber} isHovered={isHovered}/>
       <ProjectHeaderAndText header={header} description={description} />
     </div>
   );

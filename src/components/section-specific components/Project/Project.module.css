@@ -9,13 +9,37 @@
   height: 40vh;
   transition: all var(--main-speed) ease-in-out;
   border-top: 0.1rem solid black;
-  border-bottom: 0.1rem solid black;
+  /* border-bottom: 0.1rem solid black; */
   padding-top: 4rem;
   cursor: pointer;
-  background: none;
-  z-index: 1;
+  z-index: 0;
 }
-.projectBackground{
+
+/* .projectWrapperHovered::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255, .7);
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+} */
+
+.backgroundOverlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+  background: white;
+}
+
+/* .projectBackground{
   content: "";
   position: absolute;
   top: 0;
@@ -39,7 +63,7 @@
 .projectBackground:hover:after {
   background: rgb(255, 255, 255, 0.7);
   z-index: -1;
-} 
+}  */
 
 
 
