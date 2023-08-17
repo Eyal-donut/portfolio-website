@@ -14,7 +14,7 @@ const ProjectNumber: FC<ProjectNumberProps> = ({
     <div className={classes.numberBoxContainer}>
       <div
         className={classes.line}
-        style={{ width: isHovered ? "5rem" : "1.5rem" }}
+        style={{ width: isHovered ? "10rem" : "1.5rem" }}
       />
       <div className={classes.numberBox}>{`0${projectNumber}`}</div>
     </div>

@@ -44,8 +44,10 @@ const Project: FC<ProjectProps> = ({
           opacity: isHovered ? 0.7 : 1,
         }}
       ></div>
-      <ProjectNumber projectNumber={projectNumber} isHovered={isHovered}/>
-      <ProjectHeaderAndText header={header} description={description} />
+      <div className={classes.flexContainer}>
+        <ProjectNumber projectNumber={projectNumber} isHovered={isHovered} />
+        <ProjectHeaderAndText header={header} description={description} />
+      </div>
     </div>
   );
 };

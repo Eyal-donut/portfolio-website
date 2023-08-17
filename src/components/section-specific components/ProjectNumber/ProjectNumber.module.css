@@ -1,20 +1,25 @@
-.numberBoxContainer{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 1.5rem;
-    padding-top: .5rem;
+.numberBoxContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 1.5rem;
+  padding-top: 0.5rem;
 }
 
-.numberBox{
-   font-size: var(--font-size-p2-projects);
+.numberBox {
+  font-size: var(--font-size-p2-projects);
 }
 
-.line{
-    height: .08rem;
-    background-color: black;
-    margin-right: 0.2rem;
-    margin-top: .55rem;
-    transition: all 0.5s ease-in-out;
+.line {
+  height: 0.08rem;
+  background-color: black;
+  margin-right: 0.2rem;
+  margin-top: 0.55rem;
+  transition: all var(--main-effect-speed) ease-in-out;
 }
 
+@media (max-width: 660px) {
+  .line {
+    max-width: 5rem;
+  }
+}
