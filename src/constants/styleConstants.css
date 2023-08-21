@@ -6,7 +6,7 @@
 
   --main-theme-color: #000000;
 
-  --main-effect-speed: 0.2s;
+  --main-effect-speed: 0.15s;
 
   --navbar-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --btn-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -20,7 +20,8 @@
   --font-size-h2: 2.1rem;
   --font-size-h3: 1.6rem;
   --font-size-p: 2rem;
-  --font-size-p2-projects: 1.5rem;
+  --font-size-p2-projects: 1.4rem;
+  --font-size-projects-view-arrow: 1.1rem;
   --font-size-button: 1.8rem;
   --font-size-nav-button: 2.1rem;
 

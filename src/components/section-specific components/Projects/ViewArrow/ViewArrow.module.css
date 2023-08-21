@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10rem;
+  width: 12rem;
+  position: absolute;
+  right: 2rem;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 2rem;
+  background: url(/src/assets/images/Arrow.svg) no-repeat center right;
+}
+
+.view {
+  font-size: var(--font-size-projects-view-arrow);
+  font-weight: var(--font-weight-bold-h1-h3);
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 899px) {
+  .wrapper {
+    bottom: 2rem;
+  }
+  .arrow {
+    width: 70%;
+  }
+}
+@media (max-width: 450px) {
+  .wrapper {
+    bottom: 0rem;
+  }
+}

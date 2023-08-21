@@ -2,6 +2,7 @@ import { FC } from "react";
 import { sectionIds } from "../../../../constants/constants";
 import Project from "../Project/Project";
 import classes from "./ProjectsSection.module.css";
+import Button from "../../../global components/Button/Button";
 
 interface ProjectType {
   imageURL: string;
@@ -31,6 +32,10 @@ const ProjectsSection: FC<ProjectsProps> = ({ projects }) => {
           );
         })}
       </div>
+      <Button
+        text="Projects Portfolio pdf"
+        buttonLink="/src/assets/Eyal Lila Projects Portfolio.pdf"
+      />
     </section>
   );
 };
