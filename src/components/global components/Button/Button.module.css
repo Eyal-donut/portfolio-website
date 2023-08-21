@@ -10,10 +10,10 @@
   height: 6rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  margin: 5rem;
+  margin: 6rem;
 }
 
 .btn:hover {
-    background: black;
-    color: #ffffff;
-  }
+  background: black;
+  color: #ffffff;
+}

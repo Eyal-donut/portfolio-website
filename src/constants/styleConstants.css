@@ -5,6 +5,7 @@
   --bgr-sec-transparent: rgb(0, 0, 0, 0.8);
 
   --main-theme-color: #000000;
+  --p-font-color: #4C4B4B;
 
   --main-effect-speed: 0.15s;
 
@@ -18,14 +19,15 @@
 
   --font-size-h1: 9rem;
   --font-size-h2: 2.1rem;
-  --font-size-h3: 1.6rem;
-  --font-size-p: 2rem;
+  --font-size-h3: 1.8rem;
+  --font-size-h4: 1.6rem;
+  --font-size-p: 1.6rem;
   --font-size-p2-projects: 1.4rem;
   --font-size-projects-view-arrow: 1.1rem;
   --font-size-button: 1.8rem;
   --font-size-nav-button: 2.1rem;
 
-  --font-weight-bold-h1-h3: 700;
+  --font-weight-bold-h1-h4: 700;
   --font-weight-p: 100;
   --font-weight-bold-p2-projects: 500;
   --font-weight-nav-button: 550;
@@ -33,12 +35,14 @@
   --line-height-h1: 7.5rem;
   --line-height-h2: 3.3rem;
   --line-height-h3: 2.4rem;
+  --line-height-h4: 2.4rem;
   --line-height-p: 2.9rem;
   --line-height-button: 2.9rem;
   --line-height-p2-projects: 2.2rem;
 
   --margin-h1: 10rem 0 1.8rem;
-  --margin-h3: 8rem 0;
+  --margin-h3: 6rem 0;
+  --margin-h4: 6rem 0 3rem 0;
   --margin-nav-button: 1.5rem 2rem;
 
   --navbar-height: 6rem;
