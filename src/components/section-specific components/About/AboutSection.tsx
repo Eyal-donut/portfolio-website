@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { sectionIds } from "../../../constants/constants";
+import TechnologiesGrid from "./TechnologiesGrid/TechnologiesGrid";
 
 const About: FC = () => {
   return (
@@ -16,6 +17,12 @@ const About: FC = () => {
         as an aerial imagery analyst.
       </p>
       <h4>technologies</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi earum
+        delectus vel, quibusdam aliquid non doloribus molestiae incidunt eaque
+        at? Beatae commodi eius voluptates, modi ullam atque aut sunt!
+      </p>
+      <TechnologiesGrid />
     </section>
   );
 };

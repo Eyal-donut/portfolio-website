@@ -120,7 +120,7 @@ section {
     font-size: 68%;
   }
   .hero {
-    background: url(/Assets/images/hero_04_tablet.png) no-repeat center
+    background: url(/assets/images/hero_04_tablet.png) no-repeat center
       center/cover;
   }
   .header-border-bottom {
@@ -133,7 +133,7 @@ section {
     font-size: 72%;
   }
   .hero {
-    background: url(/Assets/images/hero_04_desktop.png) no-repeat center
+    background: url(/assets/images/hero_04_desktop.png) no-repeat center
       center/cover;
   }
   .navbar {

@@ -10,7 +10,7 @@ const HomePage: FC = () => {
     <>
       <Main />
       <About />
-      <Projects projects={projectsInfos}/>
+      <Projects projects={projectsInfos} />
       <Contact />
     </>
   );
