@@ -9,20 +9,21 @@
 
   --main-effect-speed: 0.15s;
 
-  
+  --max-width-text: 850px;
+  --max-width-content: 970px;
+
   --navbar-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --btn-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
   --section-spacer-margin: 6rem;
-  --prim-margin: 2rem;
-  --sec-margin: 1rem;
-  --third-margin: 0.5rem;
+  --under-text-margin: 3rem;
 
   --font-size-h1: 9rem;
   --font-size-h2: 2.1rem;
   --font-size-h3: 1.8rem;
   --font-size-h4: 1.6rem;
+  --font-size-h5: 1.4rem;
   --font-size-p: 1.6rem;
   --font-size-p2-projects: 1.4rem;
   --font-size-projects-view-arrow: 1.1rem;
@@ -30,7 +31,8 @@
   --font-size-nav-button: 2.1rem;
 
   --font-weight-bold-h1-h4: 700;
-  --font-weight-p: 100;
+  --font-weight-bold-h5: 500;
+  --font-weight-p: 0;
   --font-weight-bold-p2-projects: 500;
   --font-weight-nav-button: 550;
 
@@ -38,6 +40,7 @@
   --line-height-h2: 3.3rem;
   --line-height-h3: 2.4rem;
   --line-height-h4: 2.4rem;
+  --line-height-h5: 2.1rem;
   --line-height-p: 2.9rem;
   --line-height-button: 2.9rem;
   --line-height-p2-projects: 2.2rem;

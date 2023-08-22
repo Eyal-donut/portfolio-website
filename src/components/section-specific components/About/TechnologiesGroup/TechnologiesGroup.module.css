@@ -1,0 +1,35 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  background: #ececec;
+  padding: 3rem 2rem;
+}
+.technologyImage {
+  filter: grayscale(100%);
+  opacity: 0.7;
+  width: 12rem;
+  height: 9rem;
+  margin: 3rem 1rem;
+}
+
+.innerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 460px){
+    .technologyImage{
+        margin: 3rem 3rem;
+    }
+}
+@media (min-width: 825px){
+    .technologyImage{
+        margin: 3rem 5rem;
+    }
+}
