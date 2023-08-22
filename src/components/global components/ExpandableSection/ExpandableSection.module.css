@@ -1,0 +1,6 @@
+.container {
+  transition: max-height 0.5s ease-in-out;
+  overflow-y: hidden;
+  cursor: pointer;
+  position: relative;
+}

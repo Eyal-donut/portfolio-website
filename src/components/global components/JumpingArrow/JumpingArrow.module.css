@@ -1,0 +1,31 @@
+.arrows {
+    position: relative;
+  }
+  
+  .arrow,
+  .secondArrow {
+    background: url("/src/assets/images/expandArrowTwo.png") no-repeat center
+      center/cover;
+    filter: saturate(0);
+  
+    height: 3rem;
+    width: 3rem;
+    margin-left: 0.5rem;
+  }
+  
+  @keyframes jumpAnimation {
+    50% {
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .secondArrow {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    animation: jumpAnimation 1.2s infinite ease-out;
+  }
+  

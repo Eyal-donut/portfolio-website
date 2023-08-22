@@ -8,6 +8,7 @@ import {
   versionControlTechnologies,
 } from "../../../../constants/constants";
 import TechnologiesGroup from "../TechnologiesGroup/TechnologiesGroup";
+import ExpandableSection from "../../../global components/ExpandableSection/ExpandableSection";
 
 const About: FC = () => {
   return (
@@ -29,27 +30,29 @@ const About: FC = () => {
         delectus vel, quibusdam aliquid non doloribus molestiae incidunt eaque
         at? Beatae commodi eius voluptates, modi ullam atque aut sunt!
       </p>
-      <TechnologiesGroup
-        header="programming languages"
-        technologies={programmingLangs}
-        marginTop={3}
-      />
-      <TechnologiesGroup
-        header="front-end"
-        technologies={frontendTechnologies}
-      />
-      <TechnologiesGroup
-        header="back-end & database"
-        technologies={backendAndDatabaseTechnologies}
-      />
-      <TechnologiesGroup
-        header="version control"
-        technologies={versionControlTechnologies}
-      />
-      <TechnologiesGroup
-        header="testing, web-scraping and api"
-        technologies={testingScrapingAndAPI}
-      />
+      <ExpandableSection expandedMaxHeight={55} collapsedMaxHeight={1000}>
+        <TechnologiesGroup
+          header="programming languages"
+          technologies={programmingLangs}
+          marginTop={3}
+        />
+        <TechnologiesGroup
+          header="front-end"
+          technologies={frontendTechnologies}
+        />
+        <TechnologiesGroup
+          header="back-end & database"
+          technologies={backendAndDatabaseTechnologies}
+        />
+        <TechnologiesGroup
+          header="version control"
+          technologies={versionControlTechnologies}
+        />
+        <TechnologiesGroup
+          header="testing, web-scraping and api"
+          technologies={testingScrapingAndAPI}
+        />
+      </ExpandableSection>
     </section>
   );
 };
