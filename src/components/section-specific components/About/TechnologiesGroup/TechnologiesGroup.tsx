@@ -4,18 +4,15 @@ import classes from "./TechnologiesGroup.module.css";
 interface TechBoxProps {
   technologies: { imageURL: string; name: string }[];
   header: string;
-  marginTop?: number;
 }
 
 const TechnologiesGroup: FC<TechBoxProps> = ({
   technologies,
   header,
-  marginTop,
 }) => {
   return (
     <div
       className={classes.outerContainer}
-      style={{ marginTop: `${marginTop}rem` }}
     >
       <h5>{header}</h5>
       <div className={classes.innerContainer}>

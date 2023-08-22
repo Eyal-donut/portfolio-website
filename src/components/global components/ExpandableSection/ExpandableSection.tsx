@@ -1,3 +1,6 @@
+import waitFunction from "../../../hooks/useTypedMessage/waitFunction";
+import getHTMLBySectionName from "../../../utils/getHTMLBySectionName";
+import scrollToHTML from "../../../utils/scrollToHTML";
 import ClickToExpand from "../ClickToExpand/ClickToExpand";
 import classes from "./ExpandableSection.module.css";
 import { FC, useState, ReactNode } from "react";
@@ -17,6 +20,11 @@ const ExpandableSection: FC<ExpandableSectionProps> = ({
 
   const handleClick = () => {
     setIsExpanded((prevState) => !prevState);
+    if (!isExpanded) {
+      const targetHTML = getHTMLBySectionName("Technologies");
+      if (!targetHTML) throw new Error("Error in getHTMLBySectionName");
+      scrollToHTML(targetHTML);
+    }
   };
   return (
     <div

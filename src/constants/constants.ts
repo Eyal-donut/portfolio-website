@@ -3,6 +3,7 @@ export const sectionIds = {
   ABOUT: "section-about",
   PROJECTS: "section-projects",
   CONTACT: "section-contact",
+  TECHNOLOGIES: "subsection-technologies",
 };
 
 export const projectsInfos = [
@@ -22,29 +23,29 @@ export const projectsInfos = [
   },
 ];
 
-export const technologies = [
-  { name: "html", imageURL: "/src/assets/images/html.png" },
-  { name: "css", imageURL: "/src/assets/images/css2.png" },
-  {
-    name: "js",
-    imageURL: "/src/assets/images/js2.png",
-  },
-  { name: "ts", imageURL: "/src/assets/images/ts.png" },
-  { name: "react", imageURL: "/src/assets/images/react.png" },
-  { name: "redux", imageURL: "/src/assets/images/redux.png" },
-  { name: "node", imageURL: "/src/assets/images/node.png" },
-  { name: "express", imageURL: "/src/assets/images/express.png" },
-  { name: "mongo", imageURL: "/src/assets/images/mongo.png" },
-  { name: "jwt", imageURL: "/src/assets/images/jwtwo.png" },
-  { name: "puppeteer", imageURL: "/src/assets/images/puppeteer.png" },
-  { name: "azure", imageURL: "/src/assets/images/azure.png" },
-  { name: "git", imageURL: "/src/assets/images/git.png" },
-  { name: "github", imageURL: "/src/assets/images/github.png" },
-  { name: "figma", imageURL: "/src/assets/images/figma.png" },
-  { name: "mocha", imageURL: "/src/assets/images/mocha.png" },
-  { name: "chai", imageURL: "/src/assets/images/chai.png" },
-  { name: "openAI", imageURL: "/src/assets/images/openAI.svg" },
-];
+// export const technologies = [
+//   { name: "html", imageURL: "/src/assets/images/html.png" },
+//   { name: "css", imageURL: "/src/assets/images/css2.png" },
+//   {
+//     name: "js",
+//     imageURL: "/src/assets/images/js2.png",
+//   },
+//   { name: "ts", imageURL: "/src/assets/images/ts.png" },
+//   { name: "react", imageURL: "/src/assets/images/react.png" },
+//   { name: "redux", imageURL: "/src/assets/images/redux.png" },
+//   { name: "node", imageURL: "/src/assets/images/node.png" },
+//   { name: "express", imageURL: "/src/assets/images/express.png" },
+//   { name: "mongo", imageURL: "/src/assets/images/mongo.png" },
+//   { name: "jwt", imageURL: "/src/assets/images/jwtwo.png" },
+//   { name: "puppeteer", imageURL: "/src/assets/images/puppeteer.png" },
+//   { name: "azure", imageURL: "/src/assets/images/azure.png" },
+//   { name: "git", imageURL: "/src/assets/images/git.png" },
+//   { name: "github", imageURL: "/src/assets/images/github.png" },
+//   { name: "figma", imageURL: "/src/assets/images/figma.png" },
+//   { name: "mocha", imageURL: "/src/assets/images/mocha.png" },
+//   { name: "chai", imageURL: "/src/assets/images/chai.png" },
+//   { name: "openAI", imageURL: "/src/assets/images/openAI.svg" },
+// ];
 
 export const frontendTechnologies = [
   { name: "html", imageURL: "/src/assets/images/html.png" },
@@ -73,7 +74,6 @@ export const versionControlTechnologies = [
   { name: "git", imageURL: "/src/assets/images/git.png" },
   { name: "github", imageURL: "/src/assets/images/github.png" },
 ];
-
 
 export const testingScrapingAndAPI = [
   { name: "mocha", imageURL: "/src/assets/images/mocha.png" },

@@ -3,4 +3,6 @@
   overflow-y: hidden;
   cursor: pointer;
   position: relative;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
 }

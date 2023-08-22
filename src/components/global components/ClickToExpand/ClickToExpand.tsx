@@ -9,7 +9,7 @@ interface ClickToExpandProps {
 const ClickToExpand: FC<ClickToExpandProps> = ({ isExpanded }) => {
   return (
     <div className={classes.container}>
-      <p>{isExpanded ? "Click to view more" : "collapse"}</p>
+      <p>{isExpanded ? "click to view more" : "collapse"}</p>
 
       <JumpingArrow isExpanded={isExpanded} />
     </div>

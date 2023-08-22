@@ -24,17 +24,16 @@ const About: FC = () => {
         a business owner, and analytical expertise gained from military service
         as an aerial imagery analyst.
       </p>
-      <h4>technologies</h4>
+      <h4 id="subsection-technologies">technologies</h4>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi earum
         delectus vel, quibusdam aliquid non doloribus molestiae incidunt eaque
         at? Beatae commodi eius voluptates, modi ullam atque aut sunt!
       </p>
-      <ExpandableSection expandedMaxHeight={55} collapsedMaxHeight={1000}>
+      <ExpandableSection expandedMaxHeight={25} collapsedMaxHeight={1000}>
         <TechnologiesGroup
           header="programming languages"
           technologies={programmingLangs}
-          marginTop={3}
         />
         <TechnologiesGroup
           header="front-end"
