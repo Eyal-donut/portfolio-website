@@ -166,3 +166,20 @@ section {
     width: 45rem;
   }
 }
+
+@media (max-width: 1100px){
+  h1{
+    margin-top: 14rem;
+  }
+}
+@media (max-width: 740px){
+  h1{
+    margin-top: 18rem;
+  }
+}
+@media (max-width: 400px){
+  h1{
+    margin-top: 20rem;
+  }
+}
+

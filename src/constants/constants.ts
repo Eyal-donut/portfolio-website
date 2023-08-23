@@ -79,7 +79,7 @@ export const jobInfos = [
     size: 3,
     company: "Makes Innovation Hub",
     jobDescription:
-      "Worked on production level with React, Git, Github, Node.js/Express, MongoDB, Redux, Puppeteer, Open AI API,  Mocha and Chai.",
+      "Worked with React, Git, Github, Node.js/Express, MongoDB, Redux, Puppeteer, Open AI API, Mocha and Chai.",
   },
   {
     jobTitle: "Biochemical research",
