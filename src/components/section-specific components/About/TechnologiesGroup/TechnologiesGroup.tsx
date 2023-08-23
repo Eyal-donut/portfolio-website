@@ -6,14 +6,9 @@ interface TechBoxProps {
   header: string;
 }
 
-const TechnologiesGroup: FC<TechBoxProps> = ({
-  technologies,
-  header,
-}) => {
+const TechnologiesGroup: FC<TechBoxProps> = ({ technologies, header }) => {
   return (
-    <div
-      className={classes.outerContainer}
-    >
+    <div className={classes.outerContainer}>
       <h5>{header}</h5>
       <div className={classes.innerContainer}>
         {technologies.map((tech) => {

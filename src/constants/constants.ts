@@ -69,5 +69,30 @@ export const technologiesInfo = [
       { name: "azure", imageURL: "/src/assets/images/azure.png" },
       { name: "openAI", imageURL: "/src/assets/images/openAI.svg" },
     ],
-  }
-]
+  },
+];
+
+export const jobInfos = [
+  {
+    jobTitle: "Full Stack Developer",
+    iconName: "code",
+    size: 3,
+    company: "Makes Innovation Hub",
+    jobDescription:
+      "Worked on production level with React, Git, Github, Node.js/Express, MongoDB, Redux, Puppeteer, Open AI API,  Mocha and Chai.",
+  },
+  {
+    jobTitle: "Biochemical research",
+    iconName: "flask-vial",
+    size: 3,
+    company: "University of Innsbruck",
+    jobDescription: "Cell Signaling in breast cancer.",
+  },
+  {
+    jobTitle: "Business Owner",
+    iconName: "handshake",
+    size: 4,
+    company: "Eyal's Hummus",
+    jobDescription: "B2B sales, workshops and catering.",
+  },
+];
