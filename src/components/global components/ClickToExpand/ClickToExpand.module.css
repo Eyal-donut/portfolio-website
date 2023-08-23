@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bgr-light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows {
+  position: relative;
+}
+
+.arrow,
+.secondArrow {
+  background: url("/src/assets/images/expandArrowTwo.png") no-repeat center
+    center/cover;
+  filter: saturate(0);
+
+  height: 3rem;
+  width: 3rem;
+  margin-left: 0.5rem;
+}
+
+@keyframes jumpAnimation {
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.secondArrow {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  animation: jumpAnimation 1s 3 ease-out;
+}
