@@ -3,6 +3,7 @@ import { sectionIds } from "../../../../constants/constants";
 
 import WhoIAm from "../WhoIAm/WhoIAm";
 import TechnologiesSubsection from "../TechnologiesSubsection/TechnologiesSubsection";
+import WorkExperience from "../WorkExperience/WorkExperience";
 
 const About: FC = () => {
   return (
@@ -12,6 +13,7 @@ const About: FC = () => {
       </div>
       <WhoIAm />
       <TechnologiesSubsection />
+      <WorkExperience />
     </section>
   );
 };
