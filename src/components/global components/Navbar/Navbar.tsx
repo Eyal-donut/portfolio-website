@@ -1,15 +1,11 @@
 import { FC } from "react";
 import NavButton from "../NavButton/NavButton";
-import getHTMLBySectionName from "../../../utils/getHTMLBySectionName";
-import scrollToHTML from "../../../utils/scrollToHTML";
 import classes from "./Navbar.module.css";
+import scrollToHTMLBySectionName from "../../../utils/scrollToHTMLBySectionName";
 
 const Navbar: FC = () => {
-  
   const handleClick = (name: "Home" | "About" | "Projects" | "Contact") => {
-    const targetHTML = getHTMLBySectionName(name);
-    if (!targetHTML) throw new Error("Error in getHTMLBySectionName");
-    scrollToHTML(targetHTML);
+    scrollToHTMLBySectionName(name);
   };
 
   return (
