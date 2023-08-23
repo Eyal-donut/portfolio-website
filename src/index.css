@@ -86,6 +86,10 @@ p {
   color: var(--p-font-color);
 }
 
+p.main-text{
+  max-width: 44rem;
+}
+
 .p-2-projects {
   font-size: var(--font-size-p2-projects);
   font-weight: var(--font-weight-bold-p2-projects);
@@ -149,6 +153,6 @@ section {
     display: none;
   }
   .header-border-bottom {
-    width: 50rem;
+    width: 45rem;
   }
 }

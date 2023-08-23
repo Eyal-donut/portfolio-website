@@ -9,8 +9,8 @@ const HomePage: FC = () => {
   return (
     <>
       <Main />
-      <About />
       <Projects projects={projectsInfos} />
+      <About />
       <Contact />
     </>
   );

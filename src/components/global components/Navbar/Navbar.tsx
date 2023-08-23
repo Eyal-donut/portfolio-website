@@ -12,8 +12,8 @@ const Navbar: FC = () => {
     <nav className={classes.navbar}>
       <ul className="centered-flex-container">
         <NavButton name="Home" onBtnClick={handleClick}></NavButton>
-        <NavButton name="About" onBtnClick={handleClick}></NavButton>
         <NavButton name="Projects" onBtnClick={handleClick}></NavButton>
+        <NavButton name="About" onBtnClick={handleClick}></NavButton>
         <NavButton name="Contact" onBtnClick={handleClick}></NavButton>
       </ul>
     </nav>
