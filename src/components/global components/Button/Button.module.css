@@ -10,7 +10,7 @@
   height: 6rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  margin: 6rem;
+  margin: 6rem 0;
 }
 
 .btn:hover {

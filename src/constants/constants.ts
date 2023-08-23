@@ -86,7 +86,7 @@ export const jobInfos = [
     iconName: "flask-vial",
     size: 3,
     company: "University of Innsbruck",
-    jobDescription: "Cell Signaling in breast cancer.",
+    jobDescription: "Metabolic cell signaling in breast cancer.",
   },
   {
     jobTitle: "Business Owner",
