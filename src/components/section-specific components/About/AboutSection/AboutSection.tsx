@@ -30,7 +30,7 @@ const About: FC = () => {
         delectus vel, quibusdam aliquid non doloribus molestiae incidunt eaque
         at? Beatae commodi eius voluptates, modi ullam atque aut sunt!
       </p>
-      <ExpandableSection expandedMaxHeight={25} collapsedMaxHeight={1000}>
+      <ExpandableSection expandedMaxHeight={1000} collapsedMaxHeight={25}>
         <TechnologiesGroup
           header="programming languages"
           technologies={programmingLangs}

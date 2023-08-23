@@ -9,7 +9,7 @@ const JumpingArrow: FC<JumpingArrowProps> = ({ isExpanded }) => {
   return (
     <div
       className={classes.arrows}
-      style={{ rotate: isExpanded ? "180deg" : "0deg" }}
+      style={{ rotate: isExpanded ? "0deg" : "180deg" }}
     >
       <div className={classes.secondArrow} />
 
