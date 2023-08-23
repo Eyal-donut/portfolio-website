@@ -1,4 +1,3 @@
-import waitFunction from "../../../hooks/useTypedMessage/waitFunction";
 import getHTMLBySectionName from "../../../utils/getHTMLBySectionName";
 import scrollToHTML from "../../../utils/scrollToHTML";
 import ClickToExpand from "../ClickToExpand/ClickToExpand";
