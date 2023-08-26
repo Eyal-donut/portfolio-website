@@ -1,5 +1,6 @@
 .arrows {
     position: relative;
+    transition: all var(--main-effect-speed) ease-in-out;
   }
   
   .arrow,
