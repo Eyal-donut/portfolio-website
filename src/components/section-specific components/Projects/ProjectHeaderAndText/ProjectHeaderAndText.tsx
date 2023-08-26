@@ -13,7 +13,7 @@ const ProjectHeaderAndText: FC<ProjectHeaderAndTextProps> = ({
   return (
     <div className={classes.wrapper}>
       <h2 className={classes.header}>{header}</h2>
-      <p className={classes.descriptionText}>{description}</p>
+      <p className='p-2-projects'>{description}</p>
     </div>
   );
 };

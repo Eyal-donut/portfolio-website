@@ -96,3 +96,32 @@ export const jobInfos = [
     jobDescription: "B2B sales, workshops and catering.",
   },
 ];
+
+export const contactDetails = [
+  {
+    itemName: "email",
+    iconName: "envelope",
+    size: 2,
+    text: "LilaEyal@gmail.com",
+    clickable: false,
+  },
+  {
+    itemName: "linkedin",
+    iconName: "linkedin",
+    size: 2,
+    text: "linkedin.com/in/eyal-lila",
+    link: "https://www.linkedin.com/in/eyal-lila/",
+    color: "light",
+    clickable: true,
+    brandIcon: true,
+  },
+  {
+    itemName: "github",
+    iconName: "github",
+    size: 2,
+    text: "github.com/Eyal-donut",
+    link: "https://github.com/Eyal-donut/",
+    clickable: true,
+    brandIcon: true,
+  },
+];

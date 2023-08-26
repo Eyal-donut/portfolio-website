@@ -36,6 +36,7 @@ html {
 a {
   text-decoration: inherit;
   color: inherit;
+  cursor: pointer;
 }
 
 h1 {
@@ -100,7 +101,7 @@ p.main-text {
   max-width: 44rem;
 }
 
-.p-2-projects {
+p.p-2-projects {
   font-size: var(--font-size-p2-projects);
   font-weight: var(--font-weight-bold-p2-projects);
   line-height: var(--line-height-p2-projects);
