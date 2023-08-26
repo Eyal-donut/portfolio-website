@@ -99,13 +99,6 @@ export const jobInfos = [
 
 export const contactDetails = [
   {
-    itemName: "email",
-    iconName: "envelope",
-    size: 2,
-    text: "LilaEyal@gmail.com",
-    clickable: false,
-  },
-  {
     itemName: "linkedin",
     iconName: "linkedin",
     size: 2,
@@ -114,6 +107,13 @@ export const contactDetails = [
     color: "light",
     clickable: true,
     brandIcon: true,
+  },
+  {
+    itemName: "email",
+    iconName: "envelope",
+    size: 2,
+    text: "LilaEyal@gmail.com",
+    clickable: false,
   },
   {
     itemName: "github",
