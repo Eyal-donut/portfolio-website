@@ -6,16 +6,23 @@ interface IconFaProps {
   size: number;
   color?: string;
   brandIcon?: boolean;
+  className?: string;
 }
 
-const IconFa: FC<IconFaProps> = ({ iconName, size, color, brandIcon }) => {
+const IconFa: FC<IconFaProps> = ({
+  className,
+  iconName,
+  size,
+  color,
+  brandIcon,
+}) => {
   return brandIcon ? (
     <i
-      className={`${classes.icon} fa-brands fa-solid fa-${iconName} fa-${size}x ${color}`}
+      className={`${classes.icon} ${className} fa-brands fa-solid fa-${iconName} fa-${size}x ${color}`}
     ></i>
   ) : (
     <i
-      className={`${classes.icon} fa-solid fa-${iconName} fa-${size}x ${color}`}
+      className={`${classes.icon} ${className} fa-solid fa-${iconName} fa-${size}x ${color}`}
     />
   );
 };

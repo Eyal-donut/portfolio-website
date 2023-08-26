@@ -3,3 +3,13 @@
     justify-content: space-between;
     align-items: center;
 }
+.contactText{
+    width: 15rem;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.icon{
+    width: 7rem;
+    opacity: 1;
+}

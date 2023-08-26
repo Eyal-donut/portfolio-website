@@ -2,13 +2,14 @@ section.contactSection{
     background: black;
     justify-content: flex-start;
     padding-top: 0;
+    max-width: none;
 }
 
 .contactSection *{
     color: white;
 }
 h4.contactHeader {
-    margin-top: var(--sec-margin);
+    margin-top: 4rem;
 }
 
 .wrapper{
