@@ -1,0 +1,54 @@
+.buttonWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.buttonWrapClicked:hover {
+  transform: rotate(225deg);
+}
+
+.centerLine {
+  position: relative;
+  width: 90%;
+  height: 0.2rem;
+  background: black;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+.topLine,
+.bottomLine {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: -1rem;
+  width: 100%;
+  height: 0.23rem;
+  background: inherit;
+}
+
+.bottomLine {
+  top: 1rem;
+}
+
+/* Toggler Animation */
+.centerLineClicked {
+  transform: rotate(135deg);
+  background: rgb(255, 255, 255, 0.8);
+}
+
+/* Turns Lines Into X */
+.topLineClicked,
+.bottomLineClicked {
+  top: 0;
+  transform: rotate(90deg);
+  background: rgb(255, 255, 255, 0.8);
+}
