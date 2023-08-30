@@ -1,6 +1,6 @@
 :root {
   --bgr-main: rgb(255, 255, 255);
-  --bgr-transparent: rgba(255, 255, 255, 0.8);
+  --bgr-transparent: rgba(255, 255, 255, 0.5);
   --bgr-sec: rgb(0, 0, 0);
   --bgr-sec-transparent: rgb(0, 0, 0, 0.8);
   --bgr-light-grey: #ececec;
@@ -9,6 +9,7 @@
   --p-font-color: #4c4b4b;
 
   --main-effect-speed: 0.15s;
+  --menu-speed: 1.1s;
 
   --max-width-text: 850px;
   --max-width-content: 970px;
