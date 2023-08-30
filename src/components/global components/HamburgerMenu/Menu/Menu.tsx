@@ -1,26 +1,25 @@
 import { FC } from "react";
 import classes from "./Menu.module.css";
-import MenuButton from "../MenuButton/MenuButton";
-import scrollToHTMLBySectionName from "../../../../utils/scrollToHTMLBySectionName";
+import MenuNavButton from "../MenuNavButton/MenuNavButton";
 
 interface MenuProps {
   isMenuVisible: boolean;
-  
+  onBtnClick: (name: "Home" | "About" | "Projects" | "Contact") => void
 }
 
-const Menu: FC<MenuProps> = ({ isMenuVisible }) => {
+const Menu: FC<MenuProps> = ({ isMenuVisible, onBtnClick }) => {
+ 
 
-  const handleClick = (name: "Home" | "About" | "Projects" | "Contact") => {
-    scrollToHTMLBySectionName(name);
-  };
-  
   return (
     <div
       className={
         isMenuVisible ? `${classes.menu} ${classes.menuVisible}` : classes.menu
       }
     >
-      <MenuButton name="Home" onBtnClick={handleClick} />
+      <MenuNavButton name="Home" onBtnClick={onBtnClick} />
+      <MenuNavButton name="Projects" onBtnClick={onBtnClick} />
+      <MenuNavButton name="About" onBtnClick={onBtnClick} />
+      <MenuNavButton name="Contact" onBtnClick={onBtnClick} />
     </div>
   );
 };

@@ -1,0 +1,37 @@
+.menuButton {
+  position: relative;
+  list-style: none;
+  font-weight: var(--font-weight-menu-button);
+  font-size: var(--font-size-menu-button);
+  margin: var(--margin-menu-button);
+  padding: 1rem;
+  overflow: hidden;
+  transition: all var(--menu-speed) ease;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: var(--bgr-main);
+}
+
+.menuButton:hover {
+  color: var(--bgr-sec);
+}
+
+.menuButton::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  top: 0;
+  left: -2px;
+  background: var(--bgr-main);
+  color: var(--bgr-sec);
+  transform: translateX(-100%);
+  transition: all var(--menu-speed) ease;
+  z-index: -1;
+}
+
+.menuButton:hover::before {
+  background: var(--bgr-main);
+  transform: translateX(0%);
+}
