@@ -2,9 +2,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
-  background: none;
+  z-index: 9;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: max-content;
+  height: max-content;
+  transition: all var(--menu-speed) ease-in-out;
+}
+.hidden{
+  visibility: hidden;
 }

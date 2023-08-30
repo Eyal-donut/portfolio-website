@@ -1,18 +1,20 @@
 import { FC } from "react";
 import classes from "./MenuButton.module.css";
+import { useDispatch, useSelector } from "react-redux/es/exports";
+import { setMenuDisplay } from "../../../../redux/features/menuDisplaySlice";
+import { RootState } from "../../../../redux/store";
 
 interface MenuButtonProps {
   isMenuVisible: boolean;
-  onBtnClick: () => void;
 }
 
-const MenuButton: FC<MenuButtonProps> = ({
-  isMenuVisible: isClicked,
-  onBtnClick,
-}) => {
-
+const MenuButton: FC<MenuButtonProps> = ({ isMenuVisible: isClicked }) => {
+  const dispatch = useDispatch();
+  const isMenuVisible = useSelector(
+    (state: RootState) => state.menuDisplay.value
+  );
   const handleClick = () => {
-    onBtnClick();
+    dispatch(setMenuDisplay(!isMenuVisible));
   };
 
   return (

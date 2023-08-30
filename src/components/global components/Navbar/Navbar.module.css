@@ -11,3 +11,9 @@
   z-index: 10;
   box-shadow: var(--navbar-box-shadow);
 }
+
+@media(max-width: 990px){
+  .navbar{
+    display: none;
+  }
+}

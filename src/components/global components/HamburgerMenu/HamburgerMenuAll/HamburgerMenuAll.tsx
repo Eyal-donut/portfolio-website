@@ -1,24 +1,30 @@
-import { useState } from "react";
-import MenuButton from "../MenuButton/MenuButton";
 import Menu from "../Menu/Menu";
 import classes from "./HamburgerMenuAll.module.css";
 import scrollToHTMLBySectionName from "../../../../utils/scrollToHTMLBySectionName";
+import { useDispatch } from "react-redux/es/hooks/useDispatch";
+import { useSelector } from "react-redux/es/hooks/useSelector";
+import { RootState } from "../../../../redux/store";
+import { setMenuDisplay } from "../../../../redux/features/menuDisplaySlice";
 
 const HamburgerMenu = () => {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
-
-  const handleClick = () => {
-    setIsMenuVisible((prevState) => !prevState);
-  };
-  const  handleMenuNavButtonClick = async(
+  const isMenuVisible = useSelector(
+    (state: RootState) => state.menuDisplay.value
+  );
+  const dispatch = useDispatch();
+  const handleMenuNavButtonClick = (
     name: "Home" | "About" | "Projects" | "Contact"
   ) => {
     scrollToHTMLBySectionName(name);
-    setIsMenuVisible(false)
+    dispatch(setMenuDisplay(false));
   };
   return (
-    <div className={classes.menuWrap}>
-      <MenuButton onBtnClick={handleClick} isMenuVisible={isMenuVisible} />
+    <div
+      className={
+        isMenuVisible
+          ? classes.menuWrap
+          : `${classes.menuWrap} ${classes.hidden}`
+      }
+    >
       <Menu
         isMenuVisible={isMenuVisible}
         onBtnClick={handleMenuNavButtonClick}
