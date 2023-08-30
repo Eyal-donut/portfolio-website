@@ -1,0 +1,15 @@
+.logoWrap {
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all var(--main-effect-speed) ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: black;
+}
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+}

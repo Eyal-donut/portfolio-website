@@ -122,6 +122,7 @@ export const contactDetails = [
     text: "github.com/Eyal-donut",
     link: "https://github.com/Eyal-donut/",
     clickable: true,
-    brandIcon: true,
+    isExternalLogo: true,
+    logoURL: "/src/assets/images/github-logo.png",
   },
 ];

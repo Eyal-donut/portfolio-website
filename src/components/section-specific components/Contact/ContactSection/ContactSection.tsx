@@ -19,6 +19,8 @@ const ContactSection: FC = () => {
               color={item?.color}
               clickable={item?.clickable}
               brandIcon={item?.brandIcon}
+              isExternalLogo={item?.isExternalLogo}
+              logoURL={item?.logoURL}
             />
           );
         })}

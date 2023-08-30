@@ -1,16 +1,18 @@
 import { FC, useState } from "react";
-import IconFa from "../../../global components/IconFa/IconFa";
 import classes from "./ContactItem.module.css";
 import CircledIconFa from "../../../global components/CircledIconFa/CircledIconFa";
+import CircledLogo from "../../../global components/CircledLogo/CircledLogo";
 
 interface ContactItemProps {
   iconName: string;
   size: number;
   text: string;
   clickable: boolean;
+  logoURL?: string;
   color?: string;
   link?: string;
   brandIcon?: boolean;
+  isExternalLogo?: boolean;
 }
 
 const ContactItem: FC<ContactItemProps> = ({
@@ -21,6 +23,8 @@ const ContactItem: FC<ContactItemProps> = ({
   link,
   clickable,
   brandIcon,
+  isExternalLogo,
+  logoURL,
 }) => {
   const [isMouseOver, setIsMouseOver] = useState(false);
   const handleMouseOver = () => {
@@ -37,15 +41,29 @@ const ContactItem: FC<ContactItemProps> = ({
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
     >
-      <CircledIconFa
-        iconName={iconName}
-        size={size}
-        color={color}
-        brandIcon={brandIcon}
-        className={classes.icon}
-        isMouseOver={isMouseOver}
-      />
-      <p className={`p-2-projects ${classes.contactText}`}>{text}</p>
+      {!isExternalLogo && (
+        <>
+          <CircledIconFa
+            iconName={iconName}
+            size={size}
+            color={color}
+            brandIcon={brandIcon}
+            className={classes.icon}
+            isMouseOver={isMouseOver}
+          />
+          <p className={`p-2-projects ${classes.contactText}`}>{text}</p>
+        </>
+      )}
+      {isExternalLogo && (
+        <>
+          <CircledLogo
+            logoURL={logoURL}
+            isMouseOver={isMouseOver}
+            className={classes.icon}
+          />
+          <p className={`p-2-projects ${classes.contactText}`}>{text}</p>
+        </>
+      )}
     </a>
   ) : (
     <div
@@ -53,15 +71,29 @@ const ContactItem: FC<ContactItemProps> = ({
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
     >
-      <CircledIconFa
-        iconName={iconName}
-        size={size}
-        color={color}
-        brandIcon={brandIcon}
-        className={classes.icon}
-        isMouseOver={isMouseOver}
-      />
-      <p className={`p-2-projects ${classes.contactText}`}>{text}</p>
+      {!isExternalLogo && (
+        <>
+          <CircledIconFa
+            iconName={iconName}
+            size={size}
+            color={color}
+            brandIcon={brandIcon}
+            className={classes.icon}
+            isMouseOver={isMouseOver}
+          />
+          <p className={`p-2-projects ${classes.contactText}`}>{text}</p>
+        </>
+      )}
+      {isExternalLogo && (
+        <>
+          <CircledLogo
+            logoURL={logoURL}
+            isMouseOver={isMouseOver}
+            className={classes.icon}
+          />
+          <p className={`p-2-projects ${classes.contactText}`}>{text}</p>
+        </>
+      )}
     </div>
   );
 };

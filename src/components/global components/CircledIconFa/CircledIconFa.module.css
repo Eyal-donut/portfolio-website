@@ -1,7 +1,6 @@
 .iconWrap{
-    width: 4rem;
-    height: 4rem;
-    border: 2px solid white;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: black;
     transition: all var(--main-effect-speed) ease-in-out;
     display: flex;
