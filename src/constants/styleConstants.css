@@ -32,6 +32,7 @@
   --font-size-projects-view-arrow: 1.1rem;
   --font-size-button: 1.8rem;
   --font-size-nav-button: 2.1rem;
+  --font-size-menu-button: 2.1rem;
 
   --font-weight-bold-h1-h4: 700;
   --font-weight-bold-h5: 500;
@@ -39,6 +40,7 @@
   --font-weight-p: 0;
   --font-weight-bold-p2-projects: 500;
   --font-weight-nav-button: 550;
+  --font-weight-menu-button: 700;
 
   --line-height-h1: 7.5rem;
   --line-height-h2: 3.3rem;
@@ -56,6 +58,7 @@
   --margin-h5: 0;
   --margin-h6: 0 0 1rem 0;
   --margin-nav-button: 1.5rem 2rem;
+  --margin-menu-button: 1.5rem 0.5rem;
 
   --navbar-height: 6rem;
 }
