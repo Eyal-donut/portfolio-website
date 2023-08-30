@@ -9,10 +9,14 @@
   border: none;
   cursor: pointer;
   transition: all 0.5s ease;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .buttonWrapClicked:hover {
-  transform: rotate(225deg);
+  transform: rotate(90deg);
 }
 
 .centerLine {
@@ -20,7 +24,7 @@
   width: 90%;
   height: 0.2rem;
   background: black;
-  transition: all 0.5s ease;
+  transition: all var(--menu-speed) ease;
   z-index: 10;
 }
 

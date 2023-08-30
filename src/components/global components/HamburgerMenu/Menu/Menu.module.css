@@ -1,0 +1,20 @@
+.menu {
+  background: var(--bgr-sec-transparent);
+  width: 20rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: all var(--menu-speed) ease-in-out;
+}
+
+.menuVisible {
+    transform: translateX(0);
+}
+
+@media (min-width: 660px) {
+  .menu {
+    width: 25vw;
+  }
+}
