@@ -9,7 +9,7 @@
   --p-font-color: #4c4b4b;
 
   --main-effect-speed: 0.15s;
-  --menu-speed: 1.1s;
+  --menu-speed: .8s;
 
   --max-width-text: 850px;
   --max-width-content: 970px;
@@ -40,7 +40,7 @@
   --font-weight-p: 0;
   --font-weight-bold-p2-projects: 500;
   --font-weight-nav-button: 550;
-  --font-weight-menu-button: 700;
+  --font-weight-menu-button: 550;
 
   --line-height-h1: 7.5rem;
   --line-height-h2: 3.3rem;

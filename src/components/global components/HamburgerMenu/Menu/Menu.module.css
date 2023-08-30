@@ -1,8 +1,9 @@
 .menu {
   background: var(--bgr-sec-transparent);
-  width: 20rem;
+  width: 25vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transform: translateX(-100%);
@@ -13,8 +14,8 @@
     transform: translateX(0);
 }
 
-@media (min-width: 660px) {
+@media (max-width: 660px) {
   .menu {
-    width: 25vw;
+    width: 100vw;
   }
 }

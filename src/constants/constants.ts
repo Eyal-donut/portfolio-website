@@ -1,3 +1,10 @@
+export const navButtons = [
+  { name: "Home" },
+  { name: "Projects" },
+  { name: "About" },
+  { name: "Contact" },
+];
+
 export const sectionIds = {
   MAIN: "section-main",
   ABOUT: "section-about",

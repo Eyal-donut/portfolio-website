@@ -11,10 +11,10 @@ const Navbar: FC = () => {
   return (
     <nav className={classes.navbar}>
       <ul className="centered-flex-container">
-        <NavButton name="Home" onBtnClick={handleClick}></NavButton>
-        <NavButton name="Projects" onBtnClick={handleClick}></NavButton>
-        <NavButton name="About" onBtnClick={handleClick}></NavButton>
-        <NavButton name="Contact" onBtnClick={handleClick}></NavButton>
+        <NavButton name="Home" onBtnClick={handleClick} />
+        <NavButton name="Projects" onBtnClick={handleClick} />
+        <NavButton name="About" onBtnClick={handleClick} />
+        <NavButton name="Contact" onBtnClick={handleClick} />
       </ul>
     </nav>
   );

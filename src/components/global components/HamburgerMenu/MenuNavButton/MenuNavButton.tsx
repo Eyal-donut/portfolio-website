@@ -1,13 +1,15 @@
 import { FC } from "react";
+import classes from "./MenuNavButton.module.css";
 
-import classes from "./NavButton.module.css";
-
-interface MenuButtonProps {
+interface MenuNavButtonProps {
   name: "Home" | "About" | "Projects" | "Contact";
   onBtnClick: (name: "Home" | "About" | "Projects" | "Contact") => void;
 }
 
-const MenuButton: FC<MenuButtonProps> = ({ name, onBtnClick }) => {
+const MenuNavButton: FC<MenuNavButtonProps> = ({
+  name,
+  onBtnClick,
+}) => {
   return (
     <button className={classes.menuButton} onClick={() => onBtnClick(name)}>
       {name}
@@ -15,4 +17,4 @@ const MenuButton: FC<MenuButtonProps> = ({ name, onBtnClick }) => {
   );
 };
 
-export default MenuButton;
+export default MenuNavButton;
