@@ -1,6 +1,7 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import IconFa from "../../../global components/IconFa/IconFa";
 import classes from "./ContactItem.module.css";
+import CircledIconFa from "../../../global components/CircledIconFa/CircledIconFa";
 
 interface ContactItemProps {
   iconName: string;
@@ -21,25 +22,44 @@ const ContactItem: FC<ContactItemProps> = ({
   clickable,
   brandIcon,
 }) => {
+  const [isMouseOver, setIsMouseOver] = useState(false);
+  const handleMouseOver = () => {
+    setIsMouseOver(true);
+  };
+  const handleMouseLeave = () => {
+    setIsMouseOver(false);
+  };
   return clickable ? (
-    <a href={link} className={classes.wrapper} target="_blank">
-      <IconFa
+    <a
+      href={link}
+      className={classes.wrapper}
+      target="_blank"
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+    >
+      <CircledIconFa
         iconName={iconName}
         size={size}
         color={color}
         brandIcon={brandIcon}
         className={classes.icon}
+        isMouseOver={isMouseOver}
       />
       <p className={`p-2-projects ${classes.contactText}`}>{text}</p>
     </a>
   ) : (
-    <div className={classes.wrapper}>
-      <IconFa
+    <div
+      className={classes.wrapper}
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+    >
+      <CircledIconFa
         iconName={iconName}
         size={size}
         color={color}
         brandIcon={brandIcon}
         className={classes.icon}
+        isMouseOver={isMouseOver}
       />
       <p className={`p-2-projects ${classes.contactText}`}>{text}</p>
     </div>

@@ -1,0 +1,11 @@
+.iconWrap{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid white;
+    background-color: black;
+    transition: all var(--main-effect-speed) ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
