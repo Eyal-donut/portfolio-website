@@ -38,7 +38,7 @@ const Project: FC<ProjectProps> = ({
       <div
         className={classes.backgroundOverlay}
         style={{
-          opacity: isHovered ? 0.7 : 1,
+          opacity: isHovered ? 0.75 : 1,
         }}
       ></div>
       <div className={classes.flexContainer}>
