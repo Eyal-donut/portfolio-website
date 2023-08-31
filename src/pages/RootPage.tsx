@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Navbar from "../components/global components/Navbar/Navbar";
+// import Navbar from "../components/global components/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import MenuButton from "../components/global components/HamburgerMenu/MenuButton/MenuButton";
 import { useSelector } from "react-redux";
@@ -12,7 +12,7 @@ const RootPage: FC = () => {
   );
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <MenuButton isMenuVisible={isMenuVisible} />
       <HamburgerMenu />
       <Outlet />
