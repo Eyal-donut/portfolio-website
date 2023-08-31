@@ -1,21 +1,38 @@
-.main{
-    margin-bottom: 6rem;
-    width: 100vw;
-    height:100vh;
-    background: url(/src/assets/images/hero_04_desktop.png) no-repeat center center/cover;
+.main {
+  margin-bottom: 6rem;
+  width: 100vw;
+  height: 100vh;
+  background: url(/src/assets/images/hero_mobile.png) no-repeat center center/cover;
 }
 
-.main *{
-    z-index: 1;
+.main * {
+  z-index: 1;
 }
 
 .main::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height:100vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 1)
+  );
+  z-index: 0;
+}
+
+@media (min-width: 660px) {
+  .main {
+    background: url(/src/assets/images/hero_04_tablet.png) no-repeat center
+      center/cover;
+  }
+}
+
+@media (min-width: 960px) {
+  .main {
+    background: url(/src/assets/images/hero_04_desktop.png) no-repeat center
+      center/cover;
+  }
 }

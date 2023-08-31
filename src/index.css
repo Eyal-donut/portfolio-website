@@ -88,7 +88,6 @@ h6 {
   text-transform: uppercase;
 }
 
-
 p {
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-p);
@@ -139,10 +138,6 @@ section {
   :root {
     font-size: 68%;
   }
-  .hero {
-    background: url(/assets/images/hero_04_tablet.png) no-repeat center
-      center/cover;
-  }
   .header-border-bottom {
     width: 40rem;
   }
@@ -156,30 +151,23 @@ section {
     background: url(/assets/images/hero_04_desktop.png) no-repeat center
       center/cover;
   }
-  .navbar {
-    display: flex;
-  }
-  .menu-wrap {
-    display: none;
-  }
   .header-border-bottom {
     width: 45rem;
   }
 }
 
-@media (max-width: 1100px){
-  h1{
+@media (max-width: 1100px) {
+  h1 {
     margin-top: 14rem;
   }
 }
-@media (max-width: 740px){
-  h1{
+@media (max-width: 740px) {
+  h1 {
     margin-top: 18rem;
   }
 }
-@media (max-width: 400px){
-  h1{
+@media (max-width: 400px) {
+  h1 {
     margin-top: 20rem;
   }
 }
-
