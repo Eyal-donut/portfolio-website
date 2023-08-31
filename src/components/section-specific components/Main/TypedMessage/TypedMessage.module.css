@@ -1,8 +1,4 @@
 .typedMessage{
   position: relative;
+  height: 10rem;
 }
-
-/* .spanCursor {
-  position: absolute;
-  top: -7%
-} */
