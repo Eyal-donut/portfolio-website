@@ -1,13 +1,11 @@
 import { FC, ReactNode, useState } from "react";
 import classes from "./ScrollTrigger.module.css";
 
-interface ScrollTriggerComponentProps {
+interface ScrollTriggerProps {
   children: ReactNode;
 }
 
-const ScrollTriggerComponent: FC<ScrollTriggerComponentProps> = ({
-  children,
-}) => {
+const ScrollTrigger: FC<ScrollTriggerProps> = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleTriggerEnter = () => {
@@ -19,10 +17,11 @@ const ScrollTriggerComponent: FC<ScrollTriggerComponentProps> = ({
       className={`${classes.slideUpContainer} ${
         isVisible ? "slideUpActive" : ""
       }`}
+      onScroll={handleTriggerEnter}
     >
       {children}
     </div>
   );
 };
 
-export default ScrollTriggerComponent;
+export default ScrollTrigger;

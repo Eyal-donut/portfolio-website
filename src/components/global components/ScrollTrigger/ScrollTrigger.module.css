@@ -1,0 +1,11 @@
+.slideUpContainer {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity var(--opacity-speed) ease-in,
+    transform var(--transform-speed) ease-in;
+}
+
+.slideUpActive {
+  opacity: 1;
+  transform: translateY(0);
+}
