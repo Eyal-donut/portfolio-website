@@ -14,10 +14,12 @@ const ScrollTrigger: FC<ScrollTriggerProps> = ({ children }) => {
 
   return (
     <div
-      className={`${classes.slideUpContainer} ${
-        isVisible ? "slideUpActive" : ""
-      }`}
-      onScroll={handleTriggerEnter}
+      className={
+        isVisible
+          ? `${classes.slideUpContainer} ${classes.slideUpActive}`
+          : classes.slideUpContainer
+      }
+      on={handleTriggerEnter}
     >
       {children}
     </div>
