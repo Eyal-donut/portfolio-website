@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import classes from "./Project.module.css";
 import ProjectHeaderAndText from "../ProjectHeaderAndText/ProjectHeaderAndText";
 import ProjectNumber from "../ProjectNumber/ProjectNumber";
@@ -9,6 +9,7 @@ interface ProjectProps {
   header: string;
   description: string;
   projectNumber: number;
+  link: string;
 }
 
 const Project: FC<ProjectProps> = ({
@@ -16,6 +17,7 @@ const Project: FC<ProjectProps> = ({
   header,
   description,
   projectNumber,
+  link,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const handleMouseOver = () => {
@@ -27,13 +29,15 @@ const Project: FC<ProjectProps> = ({
   };
 
   return (
-    <div
+    <a
       className={classes.projectWrapper}
       style={{
         background: `url(${imageURL}) no-repeat center center/cover`,
       }}
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
+      href={link}
+      target="_blank"
     >
       <div
         className={classes.backgroundOverlay}
@@ -46,7 +50,7 @@ const Project: FC<ProjectProps> = ({
         <ProjectHeaderAndText header={header} description={description} />
       </div>
       <ViewArrow />
-    </div>
+    </a>
   );
 };
 

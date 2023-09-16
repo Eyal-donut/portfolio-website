@@ -9,6 +9,7 @@ interface ProjectType {
   projectNumber: number;
   header: string;
   description: string;
+  link: string;
 }
 
 interface ProjectsProps {
@@ -28,6 +29,7 @@ const ProjectsSection: FC<ProjectsProps> = ({ projects }) => {
               projectNumber={proj.projectNumber}
               description={proj.description}
               header={proj.header}
+              link={proj.link}
             />
           );
         })}
