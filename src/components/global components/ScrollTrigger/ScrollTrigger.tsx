@@ -1,5 +1,5 @@
 import classes from "./ScrollTrigger.module.css";
-import { FC, ReactNode, useRef } from "react";
+import { FC, ReactNode, useRef, useState } from "react";
 import useOnScreen from "../../../hooks/useOnScreen/useOnScreen";
 
 interface ScrollTriggerProps {
@@ -10,10 +10,15 @@ const ScrollTrigger: FC<ScrollTriggerProps> = ({ children }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref);
 
+  const [hasTriggered, setHasTriggered] = useState(false);
+  if (isVisible && !hasTriggered) {
+    setHasTriggered(true);
+  }
+
   return (
     <div
       className={
-        isVisible
+        hasTriggered
           ? `${classes.slideUpContainer} ${classes.slideUpActive}`
           : classes.slideUpContainer
       }

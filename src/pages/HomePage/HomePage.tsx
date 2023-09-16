@@ -13,7 +13,9 @@ const HomePage: FC = () => {
       <ScrollTrigger>
         <Projects projects={projectsInfos} />
       </ScrollTrigger>
-      <About />
+      <ScrollTrigger>
+        <About />
+      </ScrollTrigger>
       <ContactSection />
     </>
   );
