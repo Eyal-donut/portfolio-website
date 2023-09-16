@@ -11,6 +11,12 @@
   --main-effect-speed: 0.15s;
   --menu-speed: .8s;
 
+  /* effects for scroll trigger */
+  --opacity-speed: 1s;
+  --transform-speed:.5s ;
+  --scroll-distance: 100px;
+  
+
   --max-width-text: 850px;
   --max-width-content: 970px;
 
