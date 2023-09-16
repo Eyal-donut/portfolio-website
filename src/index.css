@@ -97,6 +97,8 @@ p {
 
 p.main-text {
   max-width: 44rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 p.p-2-projects {
@@ -128,9 +130,7 @@ section {
 section {
   max-width: 970px;
 }
-p.main-text{
-  margin-left: 1rem;
-  margin-right: 1rem;
+p.main-text {
 }
 
 .header-border-bottom {
