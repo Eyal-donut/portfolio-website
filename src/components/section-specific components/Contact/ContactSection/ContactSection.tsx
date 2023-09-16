@@ -6,7 +6,7 @@ import ContactItem from "../ContactItem/ContactItem";
 const ContactSection: FC = () => {
   return (
     <section id={sectionIds.CONTACT} className={classes.contactSection}>
-      <h4 className={classes.contactHeader}>contact</h4>
+      <h3 className={classes.contactHeader}>contact</h3>
       <div className={classes.wrapper}>
         {contactDetails.map((item) => {
           return (
