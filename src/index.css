@@ -128,6 +128,10 @@ section {
 section {
   max-width: 970px;
 }
+p.main-text{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 .header-border-bottom {
   width: 30rem;
