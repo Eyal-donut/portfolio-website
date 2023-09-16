@@ -1,6 +1,6 @@
 .slideUpContainer {
   opacity: 0;
-  transform: translateY(80px);
+  transform: translateY(var(--scroll-distance));
   transition: opacity var(--opacity-speed) ease-in,
     transform var(--transform-speed) ease-in;
 }
