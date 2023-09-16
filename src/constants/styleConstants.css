@@ -12,8 +12,8 @@
   --menu-speed: .8s;
 
   /* effects for scroll trigger */
-  --opacity-speed: .5s;
-  --transform-speed:.5s ;
+  --opacity-speed: 2s;
+  --transform-speed:.2s ;
   --scroll-distance: 200px;
   
 
