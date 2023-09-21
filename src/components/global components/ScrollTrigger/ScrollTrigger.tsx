@@ -12,7 +12,7 @@ const ScrollTrigger: FC<ScrollTriggerProps> = ({
   isReversibleEffect,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const isVisible = useOnScreen(ref);
+  const {isVisible} = useOnScreen(ref);
 
   const [hasTriggered, setHasTriggered] = useState(false);
   if (isVisible && !hasTriggered && !isReversibleEffect) {

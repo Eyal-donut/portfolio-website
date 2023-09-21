@@ -21,7 +21,7 @@ const Project: FC<ProjectProps> = ({
   link,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const isVisible = useOnScreen(ref);
+  const { isInMiddle, isVisible } = useOnScreen(ref);
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -52,7 +52,7 @@ const Project: FC<ProjectProps> = ({
             ? isHovered
               ? 0.75
               : 1
-            : isVisible
+            : isInMiddle
             ? 0.75
             : 1,
         }}
@@ -61,7 +61,7 @@ const Project: FC<ProjectProps> = ({
         <ProjectNumber
           projectNumber={projectNumber}
           isHovered={isHovered}
-          isVisible={isVisible}
+          isVisible={isInMiddle}
         />
         <ProjectHeaderAndText header={header} description={description} />
       </div>
