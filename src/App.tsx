@@ -12,7 +12,6 @@ const App: FC = () => {
       errorElement: <ErrorPage />,
       children: [
         {path: "", element: <HomePage/>}
-        // { path: "project", element: <ProjectPage /> },
       ],
     },
   ]);
