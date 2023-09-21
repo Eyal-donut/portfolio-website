@@ -1,4 +1,24 @@
 import nutriScanImage from "/src/assets/images/NutriScan-bgr.png";
+import pokemonImage from "/src/assets/images/pokemon-bgr.png";
+import jsImage from "/src/assets/images/js2.png";
+import tsImage from "/src/assets/images/ts.png";
+import htmlImage from "/src/assets/images/html.png";
+import cssImage from "/src/assets/images/css2.png";
+import reactImage from "/src/assets/images/react.png";
+import reduxImage from "/src/assets/images/redux.png";
+import figmaImage from "/src/assets/images/figma.png";
+import nodeImage from "/src/assets/images/node.png";
+import expressImage from "/src/assets/images/express.png";
+import mongoImage from "/src/assets/images/mongo.png";
+import jwtImage from "/src/assets/images/jwtwo.png"
+import gitImage from "/src/assets/images/git.png"
+import githubImage from "/src/assets/images/github.png"
+import mochaImage from "/src/assets/images/mocha.png"
+import chaiImage from "/src/assets/images/chai.png"
+import puppeteerImage from "/src/assets/images/puppeteer.png"
+import azureImage from "/src/assets/images/azure.png"
+import openAIImage from "/src/assets/images/openAI.svg"
+import githubLogo from "/src/assets/images/github-logo.png"
 
 export const sectionIds = {
   MAIN: "section-main",
@@ -18,7 +38,7 @@ export const projectsInfos = [
     link: "https://nutri-scan.netlify.app/",
   },
   {
-    imageURL: "/src/assets/images/pokemon-bgr.png",
+    imageURL: pokemonImage,
     description:
       "A fun role-playing game, inspired by the iconic TV series from the 90's. Explore a variety of maps, fight different Pokémons, and of course, to try and catch 'em all! ",
     projectNumber: 2,
@@ -33,45 +53,45 @@ export const technologiesInfo = [
     technologies: [
       {
         name: "js",
-        imageURL: "/src/assets/images/js2.png",
+        imageURL: jsImage,
       },
-      { name: "ts", imageURL: "/src/assets/images/ts.png" },
+      { name: "ts", imageURL: tsImage },
     ],
   },
   {
     header: "front-end",
     technologies: [
-      { name: "html", imageURL: "/src/assets/images/html.png" },
-      { name: "css", imageURL: "/src/assets/images/css2.png" },
-      { name: "react", imageURL: "/src/assets/images/react.png" },
-      { name: "redux", imageURL: "/src/assets/images/redux.png" },
-      { name: "figma", imageURL: "/src/assets/images/figma.png" },
+      { name: "html", imageURL: htmlImage },
+      { name: "css", imageURL: cssImage },
+      { name: "react", imageURL: reactImage },
+      { name: "redux", imageURL: reduxImage },
+      { name: "figma", imageURL: figmaImage },
     ],
   },
   {
     header: "back-end & database",
     technologies: [
-      { name: "node", imageURL: "/src/assets/images/node.png" },
-      { name: "express", imageURL: "/src/assets/images/express.png" },
-      { name: "mongo", imageURL: "/src/assets/images/mongo.png" },
-      { name: "jwt", imageURL: "/src/assets/images/jwtwo.png" },
+      { name: "node", imageURL: nodeImage },
+      { name: "express", imageURL: expressImage },
+      { name: "mongo", imageURL: mongoImage },
+      { name: "jwt", imageURL: jwtImage },
     ],
   },
   {
     header: "version control",
     technologies: [
-      { name: "git", imageURL: "/src/assets/images/git.png" },
-      { name: "github", imageURL: "/src/assets/images/github.png" },
+      { name: "git", imageURL: gitImage },
+      { name: "github", imageURL: githubImage },
     ],
   },
   {
     header: "testing, web-scraping and api",
     technologies: [
-      { name: "mocha", imageURL: "/src/assets/images/mocha.png" },
-      { name: "chai", imageURL: "/src/assets/images/chai.png" },
-      { name: "puppeteer", imageURL: "/src/assets/images/puppeteer.png" },
-      { name: "azure", imageURL: "/src/assets/images/azure.png" },
-      { name: "openAI", imageURL: "/src/assets/images/openAI.svg" },
+      { name: "mocha", imageURL: mochaImage },
+      { name: "chai", imageURL: chaiImage },
+      { name: "puppeteer", imageURL: puppeteerImage  },
+      { name: "azure", imageURL: azureImage },
+      { name: "openAI", imageURL: openAIImage },
     ],
   },
 ];
@@ -127,6 +147,6 @@ export const contactDetails = [
     link: "https://github.com/Eyal-donut/",
     clickable: true,
     isExternalLogo: true,
-    logoURL: "/src/assets/images/github-logo.png",
+    logoURL: githubLogo,
   },
 ];
