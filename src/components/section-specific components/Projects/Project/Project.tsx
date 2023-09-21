@@ -1,9 +1,10 @@
-import { FC, useState } from "react";
+import { FC, useState, useRef } from "react";
+import useOnScreen from "../../../../hooks/useOnScreen/useOnScreen";
 import classes from "./Project.module.css";
 import ProjectHeaderAndText from "../ProjectHeaderAndText/ProjectHeaderAndText";
 import ProjectNumber from "../ProjectNumber/ProjectNumber";
 import ViewArrow from "../ViewArrow/ViewArrow";
-
+import isDesktopViewport from "../../../../utils/isDesktopViewport";
 interface ProjectProps {
   imageURL: string;
   header: string;
@@ -19,7 +20,11 @@ const Project: FC<ProjectProps> = ({
   projectNumber,
   link,
 }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useOnScreen(ref);
+
   const [isHovered, setIsHovered] = useState(false);
+
   const handleMouseOver = () => {
     setIsHovered(true);
   };
@@ -40,13 +45,24 @@ const Project: FC<ProjectProps> = ({
       target="_blank"
     >
       <div
+        ref={ref}
         className={classes.backgroundOverlay}
         style={{
-          opacity: isHovered ? 0.75 : 1,
+          opacity: isDesktopViewport()
+            ? isHovered
+              ? 0.75
+              : 1
+            : isVisible
+            ? 0.75
+            : 1,
         }}
       ></div>
       <div className={classes.flexContainer}>
-        <ProjectNumber projectNumber={projectNumber} isHovered={isHovered} />
+        <ProjectNumber
+          projectNumber={projectNumber}
+          isHovered={isHovered}
+          isVisible={isVisible}
+        />
         <ProjectHeaderAndText header={header} description={description} />
       </div>
       <ViewArrow />

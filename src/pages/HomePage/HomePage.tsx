@@ -10,10 +10,10 @@ const HomePage: FC = () => {
   return (
     <>
       <Main />
-      <ScrollTrigger>
+      <ScrollTrigger isReversibleEffect={false}>
         <Projects projects={projectsInfos} />
       </ScrollTrigger>
-      <ScrollTrigger>
+      <ScrollTrigger isReversibleEffect={false}>
         <About />
       </ScrollTrigger>
       <ContactSection />
