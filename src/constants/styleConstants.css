@@ -12,8 +12,8 @@
   --menu-speed: .8s;
 
   /* Effects for scroll trigger */
-  --opacity-speed: 1.2s;
-  --transform-speed:1s ;
+  --opacity-speed: 1s;
+  --transform-speed:.6s ;
   --scroll-distance: 50px;
   
 
@@ -58,8 +58,8 @@
   --line-height-button: 2.9rem;
   --line-height-p2-projects: 2.2rem;
 
-  --margin-h1: 20rem 0 1.8rem;
-  --margin-h3: 6rem 0;
+  --margin-h1: 18rem 0 1.8rem;
+  --margin-h3: 4rem 0 6rem 0;
   --margin-h4: 6rem 0 3rem 0;
   --margin-h5: 0;
   --margin-h6: 0 0 1rem 0;
