@@ -18,37 +18,37 @@ const MenuButton: FC<MenuButtonProps> = ({ isMenuVisible: isClicked }) => {
   };
 
   return (
-    <button
-      className={
-        isClicked
-          ? `${classes.buttonWrap} ${classes.buttonWrapClicked}`
-          : classes.buttonWrap
-      }
-      onClick={handleClick}
-    >
-      <div
+      <button
         className={
           isClicked
-            ? `${classes.centerLine} ${classes.centerLineClicked}`
-            : classes.centerLine
+            ? `${classes.buttonWrap} ${classes.buttonWrapClicked}`
+            : classes.buttonWrap
         }
+        onClick={handleClick}
       >
         <div
           className={
             isClicked
-              ? `${classes.topLine} ${classes.topLineClicked}`
-              : classes.topLine
+              ? `${classes.centerLine} ${classes.centerLineClicked}`
+              : classes.centerLine
           }
-        />
-        <div
-          className={
-            isClicked
-              ? `${classes.bottomLine} ${classes.bottomLineClicked}`
-              : classes.bottomLine
-          }
-        />
-      </div>
-    </button>
+        >
+          <div
+            className={
+              isClicked
+                ? `${classes.topLine} ${classes.topLineClicked}`
+                : classes.topLine
+            }
+          />
+          <div
+            className={
+              isClicked
+                ? `${classes.bottomLine} ${classes.bottomLineClicked}`
+                : classes.bottomLine
+            }
+          />
+        </div>
+      </button>
   );
 };
 
