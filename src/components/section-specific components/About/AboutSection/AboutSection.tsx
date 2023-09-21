@@ -5,6 +5,7 @@ import WhoIAm from "../WhoIAm/WhoIAm";
 import TechnologiesSubsection from "../TechnologiesSubsection/TechnologiesSubsection";
 import WorkExperience from "../WorkExperience/WorkExperience";
 import classes from './AboutSection.module.css'
+import CV from "/src/assets/Eyal Lila CV.pdf"
 
 const About: FC = () => {
   return (
@@ -17,7 +18,7 @@ const About: FC = () => {
       <WorkExperience />
       <Button
         text="Open My CV"
-        buttonLink="/src/assets/Eyal Lila CV.pdf"
+        buttonLink= {CV}
         className={classes.btn}
       />
     </section>
