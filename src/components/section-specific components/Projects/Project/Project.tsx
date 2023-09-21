@@ -21,7 +21,7 @@ const Project: FC<ProjectProps> = ({
   link,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const { isInMiddle, isVisible } = useOnScreen(ref);
+  const { isInMiddle } = useOnScreen(ref);
 
   const [isHovered, setIsHovered] = useState(false);
 
