@@ -1,3 +1,5 @@
+import nutriScanImage from "/src/assets/images/NutriScan-bgr.png";
+
 export const sectionIds = {
   MAIN: "section-main",
   ABOUT: "section-about",
@@ -8,7 +10,7 @@ export const sectionIds = {
 
 export const projectsInfos = [
   {
-    imageURL: "/src/assets/images/NutriScan-bgr.png",
+    imageURL: nutriScanImage,
     description:
       "An innovative full-stack app, designed to help you make informed purchasing decisions based on your nutritional, dietary and environmental preferences, by simply scanning a barcode.",
     projectNumber: 1,
