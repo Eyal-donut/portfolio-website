@@ -32,7 +32,7 @@ export const projectsInfos = [
   {
     imageURL: nutriScanImage,
     description:
-      "An innovative full-stack app, designed to help you make informed purchasing decisions based on your nutritional, dietary and environmental preferences, by simply scanning a barcode.",
+      "An innovative full-stack app, designed to help in making informed purchasing decisions based on your nutritional, dietary and environmental preferences, by simply scanning a barcode.",
     projectNumber: 1,
     header: "NutriScan",
     link: "https://nutri-scan.netlify.app/",
@@ -40,7 +40,7 @@ export const projectsInfos = [
   {
     imageURL: pokemonImage,
     description:
-      "A fun role-playing game, inspired by the iconic TV series from the 90's. Explore a variety of maps, fight different Pokémons, and of course, to try and catch 'em all! ",
+      "A fun role-playing game, inspired by the iconic TV series from the 90's. Explore a variety of maps, fight Pokémons, and of course, try and catch 'em all! ",
     projectNumber: 2,
     header: "Pokémon Role Playing Game",
     link: "https://pokemon-rpg.netlify.app/",
