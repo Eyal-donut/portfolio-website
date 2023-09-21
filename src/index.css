@@ -15,12 +15,13 @@ html * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid red;
 }
 
 body,
 html {
   width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #root {
