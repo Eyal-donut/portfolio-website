@@ -40,7 +40,7 @@ export const projectsInfos = [
   {
     imageURL: pokemonImage,
     description:
-      "A fun role-playing game, inspired by the iconic TV series from the 90's. Explore a variety of maps, fight Pokémons, and of course, try and catch 'em all! ",
+      "A fun role-playing game, inspired by the iconic TV series from the 90's. Explore a variety of maps, fight Pokémons, and of course, try to catch 'em all! ",
     projectNumber: 2,
     header: "Pokémon Role Playing Game",
     link: "https://pokemon-rpg.netlify.app/",
