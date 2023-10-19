@@ -2,10 +2,11 @@ import { FC } from "react";
 import { technologiesInfo } from "../../../../constants/constants";
 import TechnologiesGroup from "../TechnologiesGroup/TechnologiesGroup";
 import ExpandableSection from "../../../global components/ExpandableSection/ExpandableSection";
+import classes from './TechnologiesSubsection.module.css'
 
 const TechnologiesSubsection: FC = () => {
   return (
-    <>
+    <div className= {classes.subsectionWrap}>
       <h4 id="subsection-technologies">technologies</h4>
       <p className="main-text">
         I possess a solid and versatile skill set, honed
@@ -26,7 +27,7 @@ const TechnologiesSubsection: FC = () => {
           );
         })}
       </ExpandableSection>
-    </>
+    </div>
   );
 };
 
