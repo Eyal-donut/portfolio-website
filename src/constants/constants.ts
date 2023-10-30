@@ -35,7 +35,7 @@ export const projectsInfos = [
       "An innovative full-stack app, designed to help in making informed purchasing decisions based on your nutritional, dietary and environmental preferences, by simply scanning a barcode.",
     projectNumber: 1,
     header: "NutriScan",
-    link: "https://nutri-scan.netlify.app/",
+    link: "https://nutriscan.netlify.app/",
   },
   {
     imageURL: pokemonImage,
