@@ -98,12 +98,12 @@ export const technologiesInfo = [
 
 export const jobInfos = [
   {
-    jobTitle: "Web Developer",
+    jobTitle: "Fullstack Web Developer",
     iconName: "code",
     size: 3,
     company: "Makes Innovation Hub",
     jobDescription:
-      "Worked with React, Git, Github, Node.js/Express, MongoDB, Redux, Puppeteer, Open AI API, Mocha and Chai.",
+      "Worked with React, JavaScript, CSS, Git, Github, Node.js/Express, MongoDB, Redux, Puppeteer, Open AI API, Mocha and Chai.",
   },
   {
     jobTitle: "Biochemical research",
