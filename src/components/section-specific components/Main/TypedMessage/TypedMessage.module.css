@@ -2,3 +2,9 @@
   position: relative;
   height: 10rem;
 }
+
+@media (max-width: 870px) {
+  h2 {
+    max-width: 30rem;
+  }
+}
