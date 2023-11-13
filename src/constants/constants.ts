@@ -98,7 +98,7 @@ export const technologiesInfo = [
 
 export const jobInfos = [
   {
-    jobTitle: "Fullstack Web Developer",
+    jobTitle: "Fullstack Developer",
     iconName: "code",
     size: 3,
     company: "Makes Innovation Hub",

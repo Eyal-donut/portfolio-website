@@ -5,7 +5,7 @@ const WhoIAm: FC = () => {
     <>
       <h4>who i am</h4>
       <p className="main-text">
-        A passionate Full Stack Web Developer, with production-level work experience
+        A passionate Full Stack Developer, with production-level work experience
         and a flair to collaborate within teams. My professional journey extends
         beyond my programming skills, encompassing a diverse background that
         includes biochemical research in breast cancer, entrepreneurial
