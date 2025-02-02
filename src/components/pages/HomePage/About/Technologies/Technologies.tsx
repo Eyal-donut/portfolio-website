@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { technologiesInfo } from "../../../../constants/constants";
-import ExpandableSection from "../../../global components/ExpandableSection/ExpandableSection";
-import TechnologiesGroup from "../TechnologiesGroup/TechnologiesGroup";
+import { technologiesInfo } from "../../../../../constants/constants";
+import ExpandableSection from "../../../../global components/ExpandableSection/ExpandableSection";
+import TechnologiesGroup from "./TechnologiesGroup/TechnologiesGroup";
 
 import classes from './Technologies.module.css';
 

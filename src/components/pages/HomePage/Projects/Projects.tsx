@@ -1,9 +1,10 @@
 import { FC } from "react";
-import { sectionIds } from "../../../constants/constants";
-import Button from "../../global components/Button/Button";
+import { sectionIds } from "../../../../constants/constants";
+import Button from "../../../global components/Button/Button";
 import Project from "./Project/Project";
-import classes from "./ProjectsSection.module.css";
 import portfolio from "/src/assets/Eyal Lila Projects Portfolio.pdf";
+
+import classes from "./Projects.module.css";
 
 interface ProjectType {
   imageURL: string;

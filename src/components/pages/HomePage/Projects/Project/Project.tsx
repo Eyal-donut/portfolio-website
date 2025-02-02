@@ -1,10 +1,10 @@
-import { FC, useState, useRef } from "react";
-import useOnScreen from "../../../../hooks/useOnScreen/useOnScreen";
-import classes from "./Project.module.css";
+import { FC, useRef, useState } from "react";
+import useOnScreen from "../../../../../hooks/useOnScreen/useOnScreen";
+import isDesktopViewport from "../../../../../utils/isDesktopViewport";
 import ProjectHeaderAndText from "../ProjectHeaderAndText/ProjectHeaderAndText";
 import ProjectNumber from "../ProjectNumber/ProjectNumber";
 import ViewArrow from "../ViewArrow/ViewArrow";
-import isDesktopViewport from "../../../../utils/isDesktopViewport";
+import classes from "./Project.module.css";
 interface ProjectProps {
   imageURL: string;
   header: string;

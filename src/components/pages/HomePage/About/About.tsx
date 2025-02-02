@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { sectionIds } from "../../../constants/constants";
-import Button from "../../global components/Button/Button";
-import ScrollTrigger from "../../global components/ScrollTrigger/ScrollTrigger";
+import { sectionIds } from "../../../../constants/constants";
+import Button from "../../../global components/Button/Button";
+import ScrollTrigger from "../../../global components/ScrollTrigger/ScrollTrigger";
 import WhoIAm from "./WhoIAm/WhoIAm";
 import WorkExperience from "./WorkExperience/WorkExperience";
 import CV from "/src/assets/Eyal Lila CV.pdf";

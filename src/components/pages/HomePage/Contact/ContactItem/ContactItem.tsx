@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
+import CircledIconFa from "../../../../global components/CircledIconFa/CircledIconFa";
+import CircledLogo from "../../../../global components/CircledLogo/CircledLogo";
 import classes from "./ContactItem.module.css";
-import CircledIconFa from "../../../global components/CircledIconFa/CircledIconFa";
-import CircledLogo from "../../../global components/CircledLogo/CircledLogo";
 
 interface ContactItemProps {
   iconName: string;

@@ -1,6 +1,6 @@
 import { FC } from "react";
+import IconFa from "../../../../global components/IconFa/IconFa";
 import classes from "./Job.module.css";
-import IconFa from "../../../global components/IconFa/IconFa";
 
 interface JobProps {
   iconName: string;

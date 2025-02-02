@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { contactDetails, sectionIds } from "../../../constants/constants";
+import { contactDetails, sectionIds } from "../../../../constants/constants";
 import ContactItem from "./ContactItem/ContactItem";
 
 import classes from "./Contact.module.css";
 
-const ContactSection: FC = () => {
+const Contact: FC = () => {
   return (
     <section id={sectionIds.CONTACT} className={classes.contactSection}>
       <h3 className={classes.contactHeader}>contact</h3>
@@ -30,4 +30,4 @@ const ContactSection: FC = () => {
   );
 };
 
-export default ContactSection;
+export default Contact;

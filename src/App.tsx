@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import RootPage from "./pages/RootPage";
-import ErrorPage from "./pages/ErrorPage/ErrorPage";
-import HomePage from "./pages/HomePage/HomePage";
+import ErrorPage from "./components/pages/ErrorPage/ErrorPage";
+import HomePage from "./components/pages/HomePage/HomePage";
+import RootPage from "./components/pages/RootPage/RootPage";
 
 const App: FC = () => {
   const router = createBrowserRouter([

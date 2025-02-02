@@ -1,4 +1,4 @@
-import { jobInfos } from "../../../../constants/constants";
+import { jobInfos } from "../../../../../constants/constants";
 import Job from "../Job/Job";
 
 const WorkExperience = () => {

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { sectionIds } from "../../../constants/constants";
+import { sectionIds } from "../../../../constants/constants";
 import Header from "./Header/Header";
 
 import classes from './Main.module.css';

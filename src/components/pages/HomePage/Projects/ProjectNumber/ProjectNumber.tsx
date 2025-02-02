@@ -1,6 +1,6 @@
 import { FC } from "react";
+import isDesktopViewport from "../../../../../utils/isDesktopViewport";
 import classes from "./ProjectNumber.module.css";
-import isDesktopViewport from "../../../../utils/isDesktopViewport";
 
 interface ProjectNumberProps {
   projectNumber: number;
