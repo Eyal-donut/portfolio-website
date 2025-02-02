@@ -1,6 +1,6 @@
 import { FC } from "react";
-import classes from "./Menu.module.css";
 import MenuNavButton from "../MenuNavButton/MenuNavButton";
+import classes from "./Menu.module.css";
 
 interface MenuProps {
   isMenuVisible: boolean;
@@ -17,8 +17,8 @@ const Menu: FC<MenuProps> = ({ isMenuVisible, onBtnClick }) => {
       }
     >
       <MenuNavButton name="Home" onBtnClick={onBtnClick} />
-      <MenuNavButton name="Projects" onBtnClick={onBtnClick} />
       <MenuNavButton name="About" onBtnClick={onBtnClick} />
+      <MenuNavButton name="Projects" onBtnClick={onBtnClick} />
       <MenuNavButton name="Contact" onBtnClick={onBtnClick} />
     </div>
   );

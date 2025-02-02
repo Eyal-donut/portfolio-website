@@ -73,10 +73,10 @@ export const technologiesInfo = [
   {
     header: "front-end",
     technologies: [
-      { name: "angular", imageURL: angularImage },
-      { name: "react", imageURL: reactImage },
       { name: "html", imageURL: htmlImage },
       { name: "css", imageURL: cssImage },
+      { name: "angular", imageURL: angularImage },
+      { name: "react", imageURL: reactImage },
       { name: "sass", imageURL: sassImage },
       { name: "redux", imageURL: reduxImage },
       { name: "figma", imageURL: figmaImage },
