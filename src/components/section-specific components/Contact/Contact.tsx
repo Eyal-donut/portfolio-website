@@ -1,7 +1,8 @@
-import { contactDetails, sectionIds } from "../../../../constants/constants";
 import { FC } from "react";
-import classes from "./ContactSection.module.css";
-import ContactItem from "../ContactItem/ContactItem";
+import { contactDetails, sectionIds } from "../../../constants/constants";
+import ContactItem from "./ContactItem/ContactItem";
+
+import classes from "./Contact.module.css";
 
 const ContactSection: FC = () => {
   return (

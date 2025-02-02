@@ -1,8 +1,9 @@
 import { FC } from "react";
 import { technologiesInfo } from "../../../../constants/constants";
-import TechnologiesGroup from "../TechnologiesGroup/TechnologiesGroup";
 import ExpandableSection from "../../../global components/ExpandableSection/ExpandableSection";
-import classes from './TechnologiesSubsection.module.css'
+import TechnologiesGroup from "../TechnologiesGroup/TechnologiesGroup";
+
+import classes from './Technologies.module.css';
 
 const TechnologiesSubsection: FC = () => {
   return (

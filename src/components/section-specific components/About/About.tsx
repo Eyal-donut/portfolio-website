@@ -1,12 +1,13 @@
 import { FC } from "react";
-import { sectionIds } from "../../../../constants/constants";
-import Button from "../../../global components/Button/Button";
-import WhoIAm from "../WhoIAm/WhoIAm";
-import TechnologiesSubsection from "../TechnologiesSubsection/TechnologiesSubsection";
-import WorkExperience from "../WorkExperience/WorkExperience";
-import classes from "./AboutSection.module.css";
+import { sectionIds } from "../../../constants/constants";
+import Button from "../../global components/Button/Button";
+import ScrollTrigger from "../../global components/ScrollTrigger/ScrollTrigger";
+import WhoIAm from "./WhoIAm/WhoIAm";
+import WorkExperience from "./WorkExperience/WorkExperience";
 import CV from "/src/assets/Eyal Lila CV.pdf";
-import ScrollTrigger from "../../../global components/ScrollTrigger/ScrollTrigger";
+
+import classes from "./About.module.css";
+import TechnologiesSubsection from "./Technologies/Technologies";
 
 const About: FC = () => {
   return (
