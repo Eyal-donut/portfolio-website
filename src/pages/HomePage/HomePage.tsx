@@ -1,10 +1,11 @@
+
 import { FC } from "react";
-import Main from "../../components/section-specific components/Main/MainSection/MainSection";
+import ScrollTrigger from "../../components/global components/ScrollTrigger/ScrollTrigger";
 import About from "../../components/section-specific components/About/AboutSection/AboutSection";
+import ContactSection from "../../components/section-specific components/Contact/ContactSection/ContactSection";
+import Main from "../../components/section-specific components/Main/MainSection/MainSection";
 import Projects from "../../components/section-specific components/Projects/ProjectsSection/ProjectsSection";
 import { projectsInfos } from "../../constants/constants";
-import ContactSection from "../../components/section-specific components/Contact/ContactSection/ContactSection";
-import ScrollTrigger from "../../components/global components/ScrollTrigger/ScrollTrigger";
 
 const HomePage: FC = () => {
   return (

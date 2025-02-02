@@ -1,13 +1,13 @@
 import { FC, ReactNode, useRef, useState } from "react";
 import useOnScreen from "../../../hooks/useOnScreen/useOnScreen";
-import classes from "./ScrollTrigger.module.css";
+import classes from "./AnimationOnScrollToView.module.css";
 
 interface ScrollTriggerProps {
   children: ReactNode;
   isReversibleEffect: boolean;
 }
 
-const ScrollTrigger: FC<ScrollTriggerProps> = ({
+const AnimationOnScrollToView: FC<ScrollTriggerProps> = ({
   children,
   isReversibleEffect,
 }) => {
@@ -37,4 +37,4 @@ const ScrollTrigger: FC<ScrollTriggerProps> = ({
   );
 };
 
-export default ScrollTrigger;
+export default AnimationOnScrollToView;
