@@ -12,8 +12,8 @@ const WorkExperience = () => {
             iconName={job.iconName}
             size={job.size}
             company={job.company}
-            JobDescription={job.jobDescription}
-            JobTitle={job.jobTitle}
+            jobDescription={job.jobDescription}
+            jobTitle={job.jobTitle}
           />
         );
       })}

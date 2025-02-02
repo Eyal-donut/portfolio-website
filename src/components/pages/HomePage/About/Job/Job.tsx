@@ -5,24 +5,23 @@ import classes from "./Job.module.css";
 interface JobProps {
   iconName: string;
   size: number;
-  JobTitle: string;
-  JobDescription: string;
+  jobTitle: string;
+  jobDescription: string;
   company: string;
 }
 
 const Job: FC<JobProps> = ({
   iconName,
   size,
-  JobTitle,
+  jobTitle,
   company,
-  JobDescription,
-}) => {
+  jobDescription}) => {
   return (
     <div className={classes.wrapper}>
       <IconFa iconName={iconName} size={size} />
-      <h6>{JobTitle} </h6>
+      <h6>{jobTitle} </h6>
       <h6 className={classes.companyName}>{company}</h6>
-      <p>{JobDescription}</p>
+      <p>{jobDescription}</p>
     </div>
   );
 };

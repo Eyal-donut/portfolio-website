@@ -1,24 +1,34 @@
-import nutriScanImage from "/src/assets/images/NutriScan-bgr.png";
-import pokemonImage from "/src/assets/images/pokemon-bgr.png";
-import jsImage from "/src/assets/images/js2.png";
-import tsImage from "/src/assets/images/ts.png";
-import htmlImage from "/src/assets/images/html.png";
+import adobeXDImage from "/src/assets/images/adobeXD.png";
+import angularImage from "/src/assets/images/angular.png";
+import azureImage from "/src/assets/images/azure.png";
+import bootstrapImage from "/src/assets/images/bootstrap.png";
+import chaiImage from "/src/assets/images/chai.png";
 import cssImage from "/src/assets/images/css2.png";
+import expressImage from "/src/assets/images/express.png";
+import figmaImage from "/src/assets/images/figma.png";
+import gitImage from "/src/assets/images/git.png";
+import githubLogo from "/src/assets/images/github-logo.png";
+import githubImage from "/src/assets/images/github.png";
+import htmlImage from "/src/assets/images/html.png";
+import javaImage from "/src/assets/images/java.png";
+import jsImage from "/src/assets/images/js2.png";
+import jwtImage from "/src/assets/images/jwtwo.png";
+import liquibaseImage from "/src/assets/images/liquibase.png";
+import mariaDBImage from "/src/assets/images/mariaDB.png";
+import mochaImage from "/src/assets/images/mocha.png";
+import mockitoImage from "/src/assets/images/mockito.png";
+import mongoImage from "/src/assets/images/mongo.png";
+import nodeImage from "/src/assets/images/node.png";
+import nutriScanImage from "/src/assets/images/NutriScan-bgr.png";
+import openAIImage from "/src/assets/images/openAI.svg";
+import pokemonImage from "/src/assets/images/pokemon-bgr.png";
+import puppeteerImage from "/src/assets/images/puppeteer.png";
 import reactImage from "/src/assets/images/react.png";
 import reduxImage from "/src/assets/images/redux.png";
-import figmaImage from "/src/assets/images/figma.png";
-import nodeImage from "/src/assets/images/node.png";
-import expressImage from "/src/assets/images/express.png";
-import mongoImage from "/src/assets/images/mongo.png";
-import jwtImage from "/src/assets/images/jwtwo.png"
-import gitImage from "/src/assets/images/git.png"
-import githubImage from "/src/assets/images/github.png"
-import mochaImage from "/src/assets/images/mocha.png"
-import chaiImage from "/src/assets/images/chai.png"
-import puppeteerImage from "/src/assets/images/puppeteer.png"
-import azureImage from "/src/assets/images/azure.png"
-import openAIImage from "/src/assets/images/openAI.svg"
-import githubLogo from "/src/assets/images/github-logo.png"
+import sassImage from "/src/assets/images/sass.png";
+import springbootImage from "/src/assets/images/springboot.png";
+import sqlImage from "/src/assets/images/sql.png";
+import tsImage from "/src/assets/images/ts.png";
 
 export const sectionIds = {
   MAIN: "section-main",
@@ -56,25 +66,39 @@ export const technologiesInfo = [
         imageURL: jsImage,
       },
       { name: "ts", imageURL: tsImage },
+      { name: "java", imageURL: javaImage },
+      { name: "sql", imageURL: sqlImage },
     ],
   },
   {
     header: "front-end",
     technologies: [
+      { name: "angular", imageURL: angularImage },
+      { name: "react", imageURL: reactImage },
       { name: "html", imageURL: htmlImage },
       { name: "css", imageURL: cssImage },
-      { name: "react", imageURL: reactImage },
+      { name: "sass", imageURL: sassImage },
       { name: "redux", imageURL: reduxImage },
       { name: "figma", imageURL: figmaImage },
+      { name: "bootstrap", imageURL: bootstrapImage },
+      { name: "adobeXD", imageURL: adobeXDImage },
     ],
   },
   {
-    header: "back-end & database",
+    header: "back-end",
     technologies: [
+      { name: "springboot", imageURL: springbootImage },
       { name: "node", imageURL: nodeImage },
-      { name: "express", imageURL: expressImage },
-      { name: "mongo", imageURL: mongoImage },
       { name: "jwt", imageURL: jwtImage },
+      { name: "express", imageURL: expressImage },
+    ],
+  },  
+  {
+    header: "database",
+    technologies: [
+      { name: "maria-db", imageURL: mariaDBImage },
+      { name: "mongo", imageURL: mongoImage },
+      { name: "liquibase", imageURL: liquibaseImage },
     ],
   },
   {
@@ -87,6 +111,7 @@ export const technologiesInfo = [
   {
     header: "testing, web-scraping and api",
     technologies: [
+      { name: "mockito", imageURL: mockitoImage },
       { name: "mocha", imageURL: mochaImage },
       { name: "chai", imageURL: chaiImage },
       { name: "puppeteer", imageURL: puppeteerImage  },
@@ -101,9 +126,18 @@ export const jobInfos = [
     jobTitle: "Fullstack Developer",
     iconName: "code",
     size: 3,
+    company: "Evaluation Software Development",
+    jobDescription:
+      "Worked with TypeScript, Java, SQL, Angular, Spring Boot, Bootstrap, CSS, SAAS, Git, GitHub, JWT, MariaDB, Liquibase, Adobe XD, and Mockito. Developed features, performed code reviews, and implemented unit tests for CHES (Computer-Based Health Evaluation System) – a clinical data assessment software. Created SISAQOL-IMI (Setting International Standards of Patient-Reported Outcomes and Quality of Life Endpoints in Cancer Clinical Trials – IMI) Web-tool - a full stack web-application for clinical data analysis.",
+
+  },  
+  {
+    jobTitle: "Fullstack Developer Internship",
+    iconName: "code",
+    size: 3,
     company: "Makes Innovation Hub",
     jobDescription:
-      "Worked with React, JavaScript, CSS, Git, Github, Node.js/Express, MongoDB, Redux, Puppeteer, Open AI API, Mocha and Chai.",
+      "Worked with JavaScript, React, CSS, Git, Github, Node.js/Express, MongoDB, Redux, Puppeteer, Open AI API, Mocha and Chai.",
   },
   {
     jobTitle: "Biochemical research",

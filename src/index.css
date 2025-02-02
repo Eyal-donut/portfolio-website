@@ -96,10 +96,11 @@ p {
   color: var(--p-font-color);
 }
 
-p.main-text {
+/* A class for texts on the page, which defines the layout relatively to the page */
+.main-text {
   max-width: 44rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
 }
 

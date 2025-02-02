@@ -3,8 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 30rem;
+    max-width: 44rem;
     margin-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .companyName{
@@ -13,4 +15,12 @@
     margin-top: -.5rem;
     font-size: 1.4rem;
     color: gray;
+
+}
+
+.li{
+    text-align: start;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
 }
