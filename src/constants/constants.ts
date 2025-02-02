@@ -123,16 +123,16 @@ export const technologiesInfo = [
 
 export const jobInfos = [
   {
-    jobTitle: "Fullstack Developer",
+    jobTitle: "Fullstack Developer - current",
     iconName: "code",
     size: 3,
     company: "Evaluation Software Development",
     jobDescription:
-      "Worked with TypeScript, Java, SQL, Angular, Spring Boot, Bootstrap, CSS, SAAS, Git, GitHub, JWT, MariaDB, Liquibase, Adobe XD, and Mockito. Developed features, performed code reviews, and implemented unit tests for CHES (Computer-Based Health Evaluation System) – a clinical data assessment software. Created SISAQOL-IMI (Setting International Standards of Patient-Reported Outcomes and Quality of Life Endpoints in Cancer Clinical Trials – IMI) Web-tool - a full stack web-application for clinical data analysis.",
+      "Working with TypeScript, Java, SQL, Angular, Spring Boot, Bootstrap, CSS, SAAS, Git, GitHub, JWT, MariaDB, Liquibase, Adobe XD, and Mockito. Developing features, performing code reviews, and implementing unit tests for CHES (Computer-Based Health Evaluation System) – a clinical data assessment software. Created SISAQOL-IMI (Setting International Standards of Patient-Reported Outcomes and Quality of Life Endpoints in Cancer Clinical Trials – IMI) Web-tool - a full stack web-application for clinical data analysis.",
 
   },  
   {
-    jobTitle: "Fullstack Developer Internship",
+    jobTitle: "Fullstack Developer",
     iconName: "code",
     size: 3,
     company: "Makes Innovation Hub",
