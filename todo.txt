@@ -1,0 +1,11 @@
+Plans programming for myself:
+
+1. Update link-in (as it is in the contact of my website)
+
+2. My portfolio website: eyal-lila:
+
+2.1. Fix Pokemon game - make heal more effective, fix the fact that weaker pokemons do more damage, make the other attack equally strong.
+
+2.2. For both projects: Create a project page component, that has all the info from the project portfolio pdf.
+
+2.3. For bot pages - do a video that shows what's going on in the game, that will run automatically on the project page.
