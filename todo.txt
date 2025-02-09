@@ -8,4 +8,4 @@ Plans programming for myself:
 
 2.2. For both projects: Create a project page component, that has all the info from the project portfolio pdf.
 
-2.3. For bot pages - do a video that shows what's going on in the game, that will run automatically on the project page.
+2.3. For both pages - do a video that shows what's going on in the game, that will run automatically on the project page.

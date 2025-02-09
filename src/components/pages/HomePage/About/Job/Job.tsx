@@ -21,7 +21,7 @@ const Job: FC<JobProps> = ({
       <IconFa iconName={iconName} size={size} />
       <h6>{jobTitle} </h6>
       <h6 className={classes.companyName}>{company}</h6>
-      <p>{jobDescription}</p>
+      <p className="main-text">{jobDescription}</p>
     </div>
   );
 };

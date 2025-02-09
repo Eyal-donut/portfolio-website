@@ -98,10 +98,11 @@ p {
 
 /* A class for texts on the page, which defines the layout relatively to the page */
 .main-text {
-  max-width: 44rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center;
+
+  text-align: justify;
+  word-break: break-word; /* Ensures long words break properly */
+  hyphens: auto; /* Adds hyphens when breaking words */
+
 }
 
 p.p-2-projects {
