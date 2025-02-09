@@ -5,8 +5,7 @@
     align-items: center;
     max-width: 44rem;
     margin-bottom: 6rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: var(--page-padding-prim);
 }
 
 .companyName{
